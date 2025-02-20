@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+</head>
+<body>
+    <h1>Index Page</h1>
+    <form action="/test" method="POST">
+        <input type="hidden" name="page" value="{{ page }}">
+        <button type="submit">Submit</button>
+    </form>
+
+    <ul>
+        {% for item in paginated_data %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+
+    <!-- Pagination links -->
+    <div>
+        <span>Page {{ page }} of {{ total_pages }}</span>
+        <br>
+        {% if page > 1 %}
+            <a href="?page={{ page - 1 }}">Previous</a>
+        {% endif %}
+        {% if page < total_pages %}
+            <a href="?page={{ page + 1 }}">Next</a>
+        {% endif %}
+    </div>
+</body>
+</html>

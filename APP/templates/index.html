@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&vert;Q&rang;Bugs</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <script src="{{ url_for('static', filename='js/contentUpdater.js') }}"></script>
+    <!--<script src="{{ url_for('static', filename='js/fetchRecordData.js') }}"></script>-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body class="body">
+    <!-- Enclose the entire content within a frame -->
+    <div class="frame">
+        <h2>&vert;Q&rang;uantum Bugs: Code Patch Analyzer</h2>
+        <p class="reg-text">The data from GitHub Quantum Code fix patches are shown below in table format.
+            Based on the data provided, The quantum code patches are analyzed and annotated.</p>
+        <!--<h3 class="space-heading"></h3>-->
+        <!-- Iterate over each record -->
+        {% for record in records %}
+        <!-- Placeholder for database row at the top -->
+        <div class="database-row">
+            <div class="database-cell left-column reg-text">
+                <table>
+                    <tr>
+                        <th>Repository</th>
+                        <td>{{ record[1] }}</td>
+                    </tr>
+                    <tr>
+                        <th>Commit Message</th>
+                        <td><div class="commit-message">{{ record[2] }}</div></td>
+                    </tr>
+                    <tr>
+                        <th>Filename</th>
+                        <td>{{ record[3] }}</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="database-cell right-column reg-text" id="show-code-change">
+                <table>
+                    <tr>
+                        <th>Code Changes</th>
+                        <td class="code-changes"><!--
+                            --><div class="code-changes-container"><!--
+                                    --><pre class="code-changes">{{ record[4] }}</pre><!--
+                            --></div><!--
+                            --><input type="hidden" id="commit-message" name="commit-message" value="{{ record[2] }}"><!--
+                            --><input type="hidden" id="file-text" name="file-text" value="{{ record[3] }}"><!--
+                            --><input type="hidden" id="code-changes" name="code-changes" value="{{ record[4] }}"><!--
+                            --><form id="popup-form">
+                                    <input type="submit" id="open-popup-btn" class="send-button" value="Analyze"><!--
+                            --></form><!--
+                        --></td>
+                    </tr>
+                </table>
+            </div>
+            <!-- New div for OpenAI reply -->
+            <div class="openai-reply-container" id="show-openai-reply">
+                <table>
+                    <tr>
+                        <th>Code Change Analysis</th>
+                        <td>
+                            <div id="openai-reply" class="openai-reply"><p>Response from OpenAI</p></div>
+                        </td>
+                    </tr>
+                    <!--<h4 class="reg-text">Code Change Analysis</h4>-->
+                </table>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="pagination-container">
+    <!-- Pagination links -->
+        <div class="pagination">
+            <!-- Insert space between the pagination links -->
+            {% if page_links.current != page_links.first %}
+                <a href="/?page={{ page_links.previous }}"><img src="{{ url_for('static', filename='previous.jpg') }}"
+                                                  width="15" height="15" alt="previous" class="navigation-image"></a>
+            {% endif %}
+            <a class="text-space"></a>
+            <a class="text-space"></a>
+            <a href="/?page={{ page_links.first }}">First</a>
+            <a class="text-space"></a>
+            {% if page_links.current == page_links.first %}
+            <a>{{ page_links.first }}</a>
+            <a class="text-space"></a>
+            <a href="/?page={{ page_links.next }}">2</a>
+            <a class="text-space"></a>
+            <a href="/?page={{ page_links.next_1 }}">3</a>
+            <a class="text-space"></a>
+            ...
+            <a class="text-space"></a>
+            <a href="/?page={{ page_links.back_1 }}">{{ page_links.back_1 }}</a>
+            <a class="text-space"></a>
+            <a href="/?page={{ page_links.last }}">{{ page_links.last }}</a>
+            <a class="text-space"></a>
+            {% elif page_links.current == page_links.last %}
+            <a class="text-space"></a>
+            <a href="/?page={{ page_links.first }}">{{ page_links.first }}</a>
+            <a class="text-space"></a>
+            <a href="/?page={{ page_links.second }}">{{ page_links.second }}</a>
+            <a class="text-space"></a>
+            ...
+            <a class="text-space"></a>
+            <a href="/?page={{ page_links.last_2 }}">{{ page_links.last_2 }}</a>
+            <a class="text-space"></a>
+            <a href="/?page={{ page_links.last_1 }}">{{ page_links.last_1}}</a>
+            <a class="text-space"></a>
+            <a>{{ page_links.last }}</a>
+            {% else %}
+            {% if page_links.prev_2 is not none %}
+            {% if page_links.back_check is not none %}
+            <a>...</a>
+            {% endif %}
+            <a class="text-space"></a>
+            <a href="/?page={{ page_links.prev_2 }}">{{ page_links.prev_2 }}</a>
+            <a class="text-space"></a>
+            <a href="/?page={{ page_links.prev_1 }}">{{ page_links.prev_1 }}</a>
+            <a class="text-space"></a>
+            {% else %}
+            <a class="text-space"></a>
+            <a href="/?page={{ page_links.prev_1 }}">{{ page_links.prev_1 }}</a>
+            <a class="text-space"></a>
+            {% endif %}
+            <a>{{ page_links.current }}</a>
+            {% if page_links.next_1 is not none %}
+            <a class="text-space"></a>
+            <a href="/?page={{ page_links.next }}">{{ page_links.next }}</a>
+            <a class="text-space"></a>
+            <a href="/?page={{ page_links.next_1 }}">{{ page_links.next_1 }}</a>
+            <a class="text-space"></a>
+            {% if page_links.next_check is not none %}
+            <a>...</a>
+            {% endif %}
+            {% else %}
+            <a class="text-space"></a>
+            <a href="/?page={{ page_links.next }}">{{ page_links.next }}</a>
+            <a class="text-space"></a>
+            {% endif %}
+            {% endif %}
+            <a class="text-space"></a>
+            <a href="/?page={{ page_links.last }}">Last</a>
+            <a class="text-space"></a>
+            <a class="text-space"></a>
+            {% if page_links.current != page_links.last %}
+                <a href="/?page={{ page_links.next }}"><img src="{{ url_for('static', filename='next.jpg') }}"
+                                              width="15" height="15" alt="Next" class="navigation-image"></a>
+            {% endif %}
+        </div>
+        <div class="pagenum"><!-- Implement go to page number logic here with a form to enter a number-->
+            <form action="{{ url_for('index', page=page) }}" method="get" class="pagenum">
+                <input type="text" name="page" placeholder="Enter Issue/Page Number">
+                <a class="text-space"></a>
+                <input class="go-to-page" type="submit" value="Go to Page">
+            </form>
+        </div>
+    </div>
+    <div class="annotation-frame">
+        <!--<h3 class="annotation-heading">Annotation Terms</h3>-->
+        <div class="flex-container">
+            <div class="annotation-terms">
+                <table class="annotation-table reg-text">
+                    <tr>
+                        {% for field in annotation_fields_display %}
+                        <th>{{ field }}</th>
+                        {% endfor %}
+                    </tr>
+                    {% for record in records %}
+                    <tr>
+                        {% for i in range(annotation_fields|length) %}
+                        <td>
+                            {{ record[i+5] }}
+                        </td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+            <div class="input-annotation-terms reg-text">
+                <form action="/annotate" method="post" id="annotation-form">
+                    <table>
+                        <tr>
+                            {% for i in range(annotation_fields|length) %}
+                            <td>
+                                <div>
+                                    <span class="field-name"><b>{{ annotation_fields_display[i] }}</b></span>
+                                </div>
+                            </td>
+                            {% endfor %}
+                        </tr>
+                        <tr>
+                            {% for i in range(annotation_fields|length) %}
+                            <td>
+                                <div>
+                                    <!--<input type="text" class="annotation-input input-sizer" onInput="this.parentNode.dataset.value = this.value" name="annotations[]" placeholder="Enter {{ annotation_fields[i] }}">-->
+                                    <textarea class="annotation-input input-sizer" onInput="this.parentNode.dataset.value = this.value" name="annotations[]" placeholder="Enter {{ annotation_fields[i] }}" rows="3" cols="30"></textarea>
+                                    <input type="hidden" class="annotation-index" name="annotation_indexes[]" value="{{ i + 1 }}">
+                                </div>
+                            </td>
+                            {% endfor %}
+                        </tr>
+                        <tr class="submit-row">
+                            <td colspan="6">
+                                <input type="hidden" name="record_id" value="{{ records[0][0] }}">
+                                <input type="hidden" name="page" value="{{ page }}">
+                                <input type="submit" value="Add Annotations" class="submit">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Overlay and Popup -->
+    <div id="overlay" class="overlay">
+        <div id="popup" class="popup">
+            <button id="close-popup" class="close-button"><img src="{{ url_for('static',
+            filename='general-pop-up-close-icon.png') }}" width="30" height="30" alt="Close"></button>
+            <div id="popup-content">
+                <!-- Default content of the popup -->
+                <p id="popup-message">This is the default message.</p>
+            </div>
+        </div>
+    </div>
+    <div id="helper-intro-text" class="helper-intro-text">
+        <p class="reg-text">Note: The data from the other records can be extracted below for quick reference to help
+             annotate/update annotations of the current record.</p>
+    </div>
+    <!-- Helper Visual -->
+    <div id="record-fetch-visual" class="record-fetch-visual">
+        <div id="num-rec" class="num-rec">
+            <div id="num-rec-score" class="num-rec-score">
+                <h4 id="other-rec">Similar/Other Records</h4>
+                <form id="record-form" class="record-form">
+                    <input type="number" id="record-id" name="record_id" placeholder="Enter Record ID">
+                    <a class="text-space"></a>
+                    <button type="submit">Fetch Info</button>
+                </form>
+            </div>
+            <div id="num-rec-content" class="num-rec-content"> <!-- New container for inner divs -->
+                <div id="num-rec-message" class="num-rec-message shared-message">Shows Extracted Data</div> <!-- Added div to display previous record message -->
+                <div id="num-rec-annotations" class="num-rec-annotations shared-annotations">Shows Extracted Data</div> <!-- Added div to display previous record annotations -->
+            </div>
+            <!--<div class="button-container">
+                <button id="bottom-button">Click Me</button>
+            </div>-->
+        </div>
+        <div id="show-sim-score" class="show-sim-score">
+            <!--<p id="sim-visual">under construction...</p>-->
+            <h4 class="sim-score-title">Similarity Score (Top 10: In descending order of similarity)</h4>
+            <div id="sim-visual" class="sim-visual">under construction...</div>
+        </div>
+    </div>
+
+    <!-- Commented the below code block to stop the displaying the Previous Records; it can be easily extracted using the Similar Records  -->
+    <!--    <div id="other-intro-text" class="helper-intro-text">-->
+    <!--         <p class="reg-text">The data from the previous record is shown below for quick reference to help-->
+    <!--             annotate/update annotations of the current record.</p>-->
+    <!--    </div>-->
+    <!--    <div id="num-rec-container" class="num-rec-container">-->
+    <!--        <div id="last-rec" class="last-rec">-->
+    <!--            <div id="similarity-score" class="similarity-score">-->
+    <!--                <h4 id="last-rec-text">Previous Record</h4>-->
+    <!--                <p id="sim-text">Similarity Score: {{ similarity_score }} (BERT)</p>-->
+    <!--            </div>-->
+    <!--            <div id="last-rec-content" class="last-rec-content"> &lt;!&ndash; New container for inner divs &ndash;&gt;-->
+    <!--                <div id="last-rec-message" class="last-rec-message"></div> &lt;!&ndash; Added div to display previous record message &ndash;&gt;-->
+    <!--                <div id="last-rec-annotations" class="last-rec-annotations"></div> &lt;!&ndash; Added div to display previous record annotations &ndash;&gt;-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    -->
+
+    <!-- JS Below -->
+    <script>
+        // JS for fetching asynchronous information for the number of commit ID provided.
+        $(document).ready(function() {
+            $('#record-form').on('submit', function(event) {
+                event.preventDefault();
+
+                let recordId = $('#record-id').val();
+
+                $.ajax({
+                    url: '/get_record_info',
+                    type: 'POST',
+                    data: { record_id: recordId },
+                    success: function(response) {
+                        if (response.error) {
+                            $('#num-rec-message').text(response.error);
+                            $('#num-rec-annotations').text('');
+                        } else {
+                            const messages = response.messages.map((msg, index) => {
+                                const truncatedMsg = msg.length > 1000 ? escapeHTML(msg.substring(0, 1000)) + '...' : escapeHTML(msg);
+                                const columnName = response.columns[index].charAt(0).toUpperCase() + response.columns[index].slice(1);
+                                // return `<p><b>${columnName}:</b> ${truncatedMsg}`; // <button onclick="copyToClipboard('${msg}', this)">Copy to Clip</button></p>`;
+                                return `<p><b>${columnName}:</b> ${columnName === 'Changes' ? `<pre style="display: inline; white-space: pre-wrap; word-wrap: break-word;">${truncatedMsg}</pre>` : truncatedMsg}`;
+                            }).join('');
+                            const annotations = response.annotations.map((ann, index) => {
+                                const columnName = response.columns[index + 4].charAt(0).toUpperCase() + response.columns[index + 4].slice(1);
+                                return `<p><b>${columnName}:</b> ${ann} <button onclick="copyToClipboard('${ann}', this)">Copy to Clip</button></p>`;
+                            }).join('');
+
+                            $('#num-rec-message').html(messages);
+                            $('#num-rec-annotations').html(annotations);
+                        }
+                    },
+                    error: function() {
+                        $('#num-rec-message').text('An error occurred');
+                        $('#num-rec-annotations').text('');
+                    }
+                });
+            });
+        });
+
+        function escapeHTML(msg) {
+            return msg.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        }
+
+        function copyToClipboard(text, button) {
+            const tempInput = document.createElement('input');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            // Change the button text to "Copied"
+            const originalText = button.innerText;
+            button.innerText = 'Copied!';
+            setTimeout(function() {
+                button.innerText = originalText;
+            }, 2000); // Change back after 2 seconds
+        }
+
+        //function displayPopup(message) {
+        //    document.getElementById('openai-reply').innerText = message;
+        //    const stringsToBold = ["Probable Symptom", "Description", "Bug Type", "Bug Pattern", "Vulnerability", "Test Case"];
+        //
+        //
+        //    // Iterate through each string to make it bold
+        //    stringsToBold.forEach((str, index) => {
+        //
+        //        // Create a regular expression to find the string globally (all occurrences)
+        //        const regex = new RegExp(str, 'g');
+        //
+        //        // Replace each occurrence of the string with the string wrapped in <strong> tags
+        //        message = message.replace(regex, index === 0 ? "<strong>" + str + "</strong>" : "<br><strong>" + str + "</strong>");
+        //    });
+        //
+        //    // Populate the OpenAI reply in the new div
+        //    const openaiReplyDiv = document.getElementById('openai-reply');
+        //
+        //    openaiReplyDiv.innerHTML = message.trim().replace(/-/g, "").replace(/#/g, "").replace(/\*/g, ""); // Remove space and -
+        //}
+
+        // JS for getting OpenAI reply from the API and shoeing it.
+        function displayPopup(message) {
+            const stringsToBold = ["Probable Symptom", "Symptom", "Description", "Bug Type", "Bug Pattern", "Vulnerability", "Test Case"];
+            const openaiReplyDiv = document.getElementById('openai-reply');
+            openaiReplyDiv.innerHTML = ''; // Clear previous content
+
+            // Wait for 1 second before processing the message
+            // setTimeout(() => {}, 1000);
+
+            // If there is a '**' in the received message then remove it
+            if (message.includes("**")) {
+                message = message.replace("**", "");
+            }
+
+            // Split the message into sections by topics
+            const sections = message.split(/\b(?=\b(?:Probable Symptom|Description|Bug Type|Bug Pattern|Vulnerability|Test Case)\b)/);
+
+            sections.forEach(section => {
+                // Extract the topic name and the text
+                const topicMatch = section.match(/^(Probable Symptom|Description|Bug Type|Bug Pattern|Vulnerability|Test Case)/);
+                const topic = topicMatch ? topicMatch[0] : '';
+                const text = section.replace(topic, '').trim();
+
+                // Create a container div for each section
+                const sectionDiv = document.createElement('div');
+
+                // Add the topic in bold
+                if (topic) {
+                    const topicElement = document.createElement('strong');
+                    topicElement.textContent = topic + " ";
+                    sectionDiv.appendChild(topicElement);
+                }
+
+                // Add the section text
+                const sectionText = document.createElement('span');
+                sectionText.innerText = text;
+                sectionDiv.appendChild(sectionText);
+
+                // Create the copy button
+                const copyButton = document.createElement('button');
+                copyButton.textContent = 'Copy to Clip';
+                copyButton.style.marginLeft = '5px'; // Reduced space before the button
+
+                // Add an onclick event listener to the button
+                copyButton.onclick = function() {
+                    // Create a textarea element to temporarily hold the text
+                    const textField = document.createElement('textarea');
+                    textField.innerText = text.replace(':', ''); // Remove colon
+                    // Remove preceeding - from the text
+                    if (textField.innerText.startsWith('-')) {
+                        textField.innerText = textField.innerText.substring(1);
+                    }
+                    document.body.appendChild(textField);
+                    textField.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textField);
+
+                    // Provide visual feedback that the value has been copied
+                    copyButton.textContent = 'Copied!';
+                    setTimeout(() => {
+                        copyButton.textContent = 'Copy to Clip';
+                    }, 2000); // Reset button text after 2 seconds
+                };
+
+                // Initially hide the copy button
+                copyButton.style.display = 'none';
+
+                // Append the button to the sectionDiv
+                sectionDiv.appendChild(copyButton);
+
+                // Add a thin space after the button
+                sectionDiv.style.marginBottom = '10px';
+
+                // Append the sectionDiv to the openaiReplyDiv
+                openaiReplyDiv.appendChild(sectionDiv);
+            });
+
+            // Show the copy buttons after the response is displayed
+            const copyButtons = openaiReplyDiv.getElementsByTagName('button');
+            for (let button of copyButtons) {
+                button.style.display = 'inline-block';
+            }
+        }
+
+        // Function to display the loading message while waiting for OpenAI response
+        function showLoadingMessage() {
+            const openaiReplyDiv = document.getElementById('openai-reply');
+            openaiReplyDiv.innerHTML = '<p>Loading response from OpenAI, please wait...</p>';
+        }
+
+        // Function to close the popup
+        // function closePopup() {
+        //    // Hide the overlay and popup
+        //    document.getElementById('overlay').style.display = 'none';
+        //}
+
+        // Function to handle submitting the form
+        function handleSubmit(event) {
+            // Prevent the default form submission behavior
+            event.preventDefault();
+
+            // Show the loading message
+            showLoadingMessage();
+
+            // Default text for popup
+            //defaultText = "Response from OpenAI is loading. Please wait..."
+
+            // Display the concatenated text in the popup for 5 seconds
+            //displayPopup(defaultText);
+            // Get the fixed line from the hidden input field
+            //var fixedText = document.getElementById('fixed-text').value;
+            var fixedText = "Probable cause of why this code change was done? \
+            What bugs does this code change resolve? \
+            Does this solve any classical or quantum vulnerabilities? \
+            Code changes in qiskit, cirq, or dwave should be related to quantum bugs. \
+            Is the code change related to classical or quantum computing? \
+            What quantum vulnerability does this fix solve? \
+            What test case can be used to detect this bug or vulnerability before the code change? \
+            Answer all the questions above, in short and strictly under the following headings: \
+            Probable Symptom, \
+            Description, \
+            Bug Type (classical or quantum), \
+            Bug Pattern (categorize the type of bug or code change), \
+            Vulnerability, \
+            and Test Case (if applicable). \
+            Please don't return numbered lists: ";
+            // Get the text from the input field
+            //var commText = document.getElementById('commit-message').value;
+            //var fileText = document.getElementById('file-text').value;
+            var inputText = document.getElementById('code-changes').value;
+            // Concatenate the fixed line and the input text - (+ " " + commText + " " + fileText)
+            var popupText = fixedText  + " " + inputText;
+            // After 0.5 seconds, send the text to the Flask server using AJAX
+            setTimeout(function() {
+                // Send the text to the Flask server using AJAX
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', '/generate_text', true);
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === XMLHttpRequest.DONE) {
+                        if (xhr.status === 200) {
+                            // Parse the JSON response
+                            var response = JSON.parse(xhr.responseText);
+                         // Display the generated text in the popup
+                            displayPopup(response.generated_text);
+                        } else {
+                            alert('Error: ' + xhr.status);
+                        }
+                    }
+                };
+                xhr.send('code_changes_text=' + encodeURIComponent(popupText));
+            }, 500);
+        }
+        // Add event listener to the form submission
+        document.getElementById('popup-form').addEventListener('submit', handleSubmit);
+        // Add event listener to close the popup when the close button is clicked
+        //document.getElementById('close-popup').addEventListener('click', closePopup); // Commented since no popup is created
+
+
+
+        // Function to fetch similarity records for the current page
+        $(document).ready(function() {
+            // Function to fetch similarity records for the current page
+            function fetchSimRecords(page) {
+                $.post('/get_sim_records', { page: page }, function(data) {
+                    var simRecordsDiv = $('#sim-visual');
+                    simRecordsDiv.empty(); // Clear the existing content
+                    //if (data.sim_records && data.sim_records.length > 0) {
+                    //    var list = $('<ol>');
+                    //    var listItem = $('<li>').text('Similarity Records:');
+                    //    data.sim_records.forEach(function(record) {
+                    //        // var listItem = $('<li>').text(`Tuple Index: ${record[0]}, Value ID: ${record[1]}, Value: ${record[2]}`);
+                    //        var listItem = $('<li>').text(${record[1]} ${record[2]}`);
+                    //        list.append(listItem);
+                    //    });
+                    //    simRecordsDiv.append(list);
+
+                    if (data.sim_records && data.sim_records.length > 0) {
+                        // Create the table element
+                        var table = $('<table>');
+
+                        // Create the header row
+                        var headerRow = $('<tr>');
+                        var headerBugNumber = $('<th>').text('Bug Number');
+                        var headerSpace = $('<th>').text('\t\t');
+                        var headerSimilarityScore = $('<th>').text('Similarity Score');
+
+                        // Append the header cells to the header row
+                        headerRow.append(headerBugNumber).append(headerSpace).append(headerSimilarityScore);
+
+                        // Append the header row to the table
+                        table.append(headerRow);
+
+                        // Iterate through the similarity records and create a row for each
+                        data.sim_records.forEach(function(record) {
+                            // Create a new row
+                            var row = $('<tr>');
+
+                            // Create cells for the bug number and similarity score
+                            var bugNumberCell = $('<td>').text(record[1]);
+                            var spaceCell = $('<td>').text('\t\t');
+                            var similarityScoreCell = $('<td>').text(record[2]);
+
+                            // Append the cells to the row
+                            row.append(bugNumberCell).append(spaceCell).append(similarityScoreCell);
+
+                            // Append the row to the table
+                            table.append(row);
+                        });
+
+                        // Append the table to the sim-visual div
+                        simRecordsDiv.append(table);
+                    } else {
+                        simRecordsDiv.text('No similarity records found.');
+                    }
+                });
+            }
+
+            // Fetch similarity records on page load
+            var currentPage = {{ page }};
+            fetchSimRecords(currentPage);
+
+            // Fetch similarity records on page change (if applicable)
+            $(document).on('click', '.page-link', function(e) {
+                e.preventDefault();
+                var newPage = $(this).data('page');
+                fetchSimRecords(newPage);
+            });
+        })
+    </script>
+</body>
+</html>

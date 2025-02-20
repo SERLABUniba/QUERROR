@@ -1,0 +1,6 @@
+What is the probable cause for this code change?
+Describe the code change briefly (issue and impact).
+Is the code change classical or quantum or hybrid (one word answer)?
+What is the pattern of bug/issue reported (for example dependency, logic, environment, functionality etc.)?
+What classical or quantum vulnerability does this fix solve? Code changes in qiskit, cirq, or dwave should be related to quantum bugs. If no bugs are resolved then write "None"?
+What test case can be incorporated to test this fix?

@@ -1,0 +1,156 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="qz7g4sQ8fV7oV9ekI9_F">
+    <mxGraphModel dx="1434" dy="847" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="KUi3UxJqZwoA2pfkQvp6-4" target="KUi3UxJqZwoA2pfkQvp6-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KUi3UxJqZwoA2pfkQvp6-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="840" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="KUi3UxJqZwoA2pfkQvp6-10" target="KUi3UxJqZwoA2pfkQvp6-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-10" value="Classification of Bug Patterns into broader classes&lt;br&gt;&lt;br&gt;(Analysis Level 2)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="450" y="1100" width="320" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="KUi3UxJqZwoA2pfkQvp6-12" target="KUi3UxJqZwoA2pfkQvp6-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-12" value="Remove commit patterns which are not related to code Bug Fixes or Vulnerability fixes (e.g. enhancement, refactor, formatting etc.)&lt;br&gt;&lt;br&gt;(Analysis Level 3)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1100" width="320" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="KUi3UxJqZwoA2pfkQvp6-23" target="KUi3UxJqZwoA2pfkQvp6-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="KUi3UxJqZwoA2pfkQvp6-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="1670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="KUi3UxJqZwoA2pfkQvp6-24" target="KUi3UxJqZwoA2pfkQvp6-26">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KUi3UxJqZwoA2pfkQvp6-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="1670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KUi3UxJqZwoA2pfkQvp6-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="1670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KUi3UxJqZwoA2pfkQvp6-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="1670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="KUi3UxJqZwoA2pfkQvp6-23" target="KUi3UxJqZwoA2pfkQvp6-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" edge="1" parent="1" source="KUi3UxJqZwoA2pfkQvp6-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="1760" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="420" y="1490" />
+              <mxPoint x="420" y="1760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-23" value="Group the remaining commit patterns into more general Bug Fixes and Reasons&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;(Analysis Level 4)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1390" width="320" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-24" value="Group Vulnerabilities per&lt;br&gt;&amp;nbsp;Bug Pattern&lt;br&gt;&lt;br&gt;(5)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontStyle=0;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1390" width="320" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-25" value="Map QPbD and QSbD principles with the Bug Patterns&lt;br&gt;&lt;br&gt;(7)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="150" y="1230" width="320" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-26" value="&lt;span style=&quot;&quot;&gt;Analyze the Bug Fixes Reasons&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;to map to Vulnerability Groups&lt;br&gt;&lt;br&gt;(6)&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="860" y="1390" width="320" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-27" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;Map Bugs with QSDLC&lt;br&gt;&lt;br&gt;(8)&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="900" y="1110" width="320" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;" edge="1" parent="1" source="KUi3UxJqZwoA2pfkQvp6-45" target="KUi3UxJqZwoA2pfkQvp6-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="60" y="210" width="300" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-2" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;GitHub Opensource &lt;br&gt;Quantum&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 20px; background-color: initial;&quot;&gt;Projects&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="220" width="280" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-1" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.github" vertex="1" parent="1">
+          <mxGeometry x="172.5" y="300" width="67.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-51" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="440" y="150" width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-6" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="KUi3UxJqZwoA2pfkQvp6-51">
+          <mxGeometry width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-30" value="&lt;div style=&quot;font-size: 20px;&quot;&gt;Extract All Code Commits;&lt;br&gt;conforming to conditions:&lt;br&gt;&lt;br&gt;&lt;b&gt;Keywords in Read Me/Documentation&lt;/b&gt;:&lt;br&gt;quantum/dwave/cirq/qml/qiskit&lt;br&gt;&lt;br&gt;&lt;b&gt;Date&lt;/b&gt; &amp;gt; 01/01/2023&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;b&gt;Stars&lt;/b&gt; &amp;gt; 50&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="KUi3UxJqZwoA2pfkQvp6-51">
+          <mxGeometry x="10" y="10" width="280" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-52" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="840" y="150" width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-45" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="KUi3UxJqZwoA2pfkQvp6-52">
+          <mxGeometry width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-46" value="&lt;div style=&quot;font-size: 20px;&quot;&gt;Data Extracted:&lt;br&gt;&lt;br&gt;&lt;b&gt;Repositories&lt;/b&gt;: 84&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Code Commits: &lt;/b&gt;5044&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="KUi3UxJqZwoA2pfkQvp6-52">
+          <mxGeometry x="10" y="10" width="280" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-53" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="840" y="550" width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-8" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="KUi3UxJqZwoA2pfkQvp6-53">
+          <mxGeometry width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-32" value="&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Annotation of the Code Commits:&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/span&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Symptom&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Description&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Bug Type&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Bug Pattern&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Vulnerability&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Test Case (Probable)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="KUi3UxJqZwoA2pfkQvp6-53">
+          <mxGeometry x="10" y="10" width="280" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-48" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=data:image/png,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;" vertex="1" parent="KUi3UxJqZwoA2pfkQvp6-53">
+          <mxGeometry x="106.5" y="80" width="87" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-54" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="440" y="550" width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-50" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="KUi3UxJqZwoA2pfkQvp6-54">
+          <mxGeometry width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-14" value="&lt;b&gt;Remove:&lt;/b&gt;&lt;br&gt;- Purely Classical Bug Types (4056)&lt;br&gt;- Non-Bug Fix Code Commits (e.g. code version update, enhancement, refactor, formatting etc.) (755)&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="KUi3UxJqZwoA2pfkQvp6-54">
+          <mxGeometry x="10" y="10" width="280" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="KUi3UxJqZwoA2pfkQvp6-8" target="KUi3UxJqZwoA2pfkQvp6-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;" edge="1" parent="1" source="KUi3UxJqZwoA2pfkQvp6-50">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="699.5" as="sourcePoint" />
+            <mxPoint x="360" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-59" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="60" y="550" width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-60" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="KUi3UxJqZwoA2pfkQvp6-59">
+          <mxGeometry width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-61" value="&lt;b&gt;Analysis:&lt;/b&gt;&lt;div&gt;- Analyze &lt;b&gt;233&lt;/b&gt; bug patterns&lt;br&gt;- Detect recurrent bug pattern areas&lt;/div&gt;&lt;div&gt;- Detect recurrent bug patterns&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="KUi3UxJqZwoA2pfkQvp6-59">
+          <mxGeometry x="10" y="10" width="280" height="280" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

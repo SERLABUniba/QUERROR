@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Annotation</title>
+    <!--<link rel="stylesheet" type="text/css" href="styles.css">-->
+</head>
+<body>
+    <div>
+        <h1>Record Annotation Interface</h1>
+        <table>
+            <tr>
+                <th>Repository</th>
+                <th>Commit Message</th>
+                <th>Filename</th>
+                <th>Code Changes</th>
+                {% for field in annotation_fields_display %}
+                <th>{{ field }}</th>
+                {% endfor %}
+            </tr>
+            {% for record in records %}
+            <tr>
+                <td>{{ record[1] }}</td>
+                <td>{{ record[2] }}</td>
+                <td>{{ record[3] }}</td>
+                <td>{{ record[4] }}</td>
+                <td>{{ record[5] }}</td>
+                <td>{{ record[6] }}</td>
+                <td>{{ record[7] }}</td>
+                <td>{{ record[8] }}</td>
+                <td>{{ record[9] }}</td>
+                <td>{{ record[10] }}</td>
+            </tr>
+            {% endfor %}
+            <tr>
+                <td colspan="4"></td>
+                {% for i in range(annotation_fields|length) %}
+                    <td>
+                        <form action="/annotate" method="post">
+                            <input type="hidden" name="record_id" value="{{ loop.index }}">
+                            <input type="hidden" name="field_index" value="{{ i + 1 }}">
+                            <input type="text" name="annotation" placeholder="Enter {{ annotation_fields[i] }}">
+                            <!-- Extract the url -->
+                            <input type="hidden" name="url" value="{{ url }}">
+                            <!-- Extract the page number -->
+                            <input type="hidden" name="page" value="{{ page }}">
+                            <input type="submit" value="Add">
+                        </form>
+                    </td>
+                {% endfor %}
+            </tr>
+        </table>
+    </div>
+
+    <!-- Pagination links -->
+    <div class="pagination">
+        <a href="/?page={{ page_links.first }}">First</a>
+        {% if page_links.current == page_links.first %}
+            <a>{{ page_links.first }}</a>
+            <a href="/?page={{ page_links.next }}">2</a>
+            <a href="/?page={{ page_links.next_1 }}">3</a>
+            ...
+            <a href="/?page={{ page_links.back_1 }}">{{ page_links.back_1 }}</a>
+            <a href="/?page={{ page_links.last }}">{{ page_links.last }}</a>
+        {% elif page_links.current == page_links.last %}
+            <a href="/?page={{ page_links.first }}">{{ page_links.first }}</a>
+            <a href="/?page={{ page_links.second }}">{{ page_links.second }}</a>
+            ...
+            <a href="/?page={{ page_links.last_2 }}">{{ page_links.last_2 }}</a>
+            <a href="/?page={{ page_links.last_1 }}">{{ page_links.last_1}}</a>
+            <a>{{ page_links.last }}</a>
+        {% else %}
+            {% if page_links.prev_2 is not none %}
+                {% if page_links.back_check is not none %}
+                    <a>...</a>
+                {% endif %}
+                <a href="/?page={{ page_links.prev_2 }}">{{ page_links.prev_2 }}</a>
+                <a href="/?page={{ page_links.prev_1 }}">{{ page_links.prev_1 }}</a>
+            {% else %}
+                <a href="/?page={{ page_links.prev_1 }}">{{ page_links.prev_1 }}</a>
+            {% endif %}
+            <a>{{ page_links.current }}</a>
+            {% if page_links.next_1 is not none %}
+                <a href="/?page={{ page_links.next }}">{{ page_links.next }}</a>
+                <a href="/?page={{ page_links.next_1 }}">{{ page_links.next_1 }}</a>
+                {% if page_links.next_check is not none %}
+                    <a>...</a>
+                {% endif %}
+            {% else %}
+                <a href="/?page={{ page_links.next }}">{{ page_links.next }}</a>
+            {% endif %}
+        {% endif %}
+        <a href="/?page={{ page_links.last }}">Last</a>
+        <a href="/?page={{ page_links.previous }}">Previous</a>
+        <a href="/?page={{ page_links.next }}">Next</a>
+    </div>
+</body>
+</html>
+

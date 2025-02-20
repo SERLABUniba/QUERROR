@@ -1,0 +1,1741 @@
+Quantum Bug Cluster  Index        Bug Pattern
+    0   			  94                  Input validation for layout methods in quantum ops. 
+    0   			  95         Input validation for layout indices in apply_layout function 
+    0   			  97                Improved qubit layout handling to fix routing issues. 
+    0   			 102                Visual representation error in quantum circuit layout 
+    0   			 179                 Fix character rendering in quantum circuit diagrams. 
+    0   			 181              Output encoding or rendering issue in circuit diagrams. 
+    0   			 183     Visualization and assertion updates to stabilize diagram outputs 
+    0   			 184                      Diagram output rendering optimizations or fixes 
+    0   			 185                        Diagram rendering issue, Unicode handling fix 
+    0   			1944             Visualization adjustment in quantum state representation 
+    0   			4428                    Layout management and qubit mapping improvements. 
+    0   			4784                        Enhancement of existing mapper functionality. 
+    0   			4785                            Invalid input handling in bosonic mapping 
+    0   			4786                     Improved bosonic-to-qubit mapping implementation 
+    0   			4788           Testing framework enhancement for bosonic operator mapping.
+    0   			4796                  Addition of new mapper for complex quantum systems. 
+    0   			4798                  Enhanced mapping functionality for better accuracy. 
+    0   			4802             Integration of mapper classes for improved calculations. 
+    0   			4804                   Refactoring for clarity and modularity in mappers. 
+    1 				425                      Logical inconsistency in observable eigenvalue resolution 
+    1 				1228                              Precision loss in matrix square root computation 
+    1 				1445                            Matrix version update and new example tests added. 
+    1 				1475                              Addition of new functionality for density matrix 
+    1 				1493                                 Matrix access adjustment for better accuracy. 
+    1 				1575   Fixes tableau updates during non-deterministic measurements and operations. 
+    1 				1645                                       Correction of ISWAP gate matrix values. 
+    1 				1700               Optimization for matrix application and simplification of cases.
+    1 				3441                                   Complex handling of coefficients in updates 
+    1 				4287                        Improved error handling for callable resolution issues 
+    1 				4873                                   Overlap matrix validation for non-unitarity 
+    1 				4981                             Fix for gate decomposition and sequencing issues. 
+	2   			107                   Incorrect variable usage in oracle operation.
+	2   			1569   Enhancements in gate control logic, adding new oracle types.
+	2   			1894                           Oracle circuit behavior modification
+	2   			1931                  Invalid assumptions on register compatibility
+	2   			2634                    Missing components in compiler registration 
+	3   			 109	                Parameter renaming for clarity or correction purpose   
+	3   			 164	                            Metadata length inconsistency adjustment   
+	3   			 384	                            Fixes operator composition logic errors.   
+	3   			 386	        Terminology correction for better understanding and accuracy   
+	3   			 480	                         Improved operator argument binding behavior   
+	3   			 486	                           Method Overriding for Binding Consistency   
+	3   			 491	       Missing implementation leads to incorrect operation behavior.   
+	3   			 505	              Assertion error due to incorrect expected tape lengths   
+	3   			 512	                         Logic error in expected results of function   
+	3   			 525	                      Adding error handling for undefined operations   
+	3   			 526	                        Adding error handling for operation failures   
+	3   			 531	                         Function call correction for input handling   
+	3   			 543	            Logic adjustment for operation handling in transpilation   
+	3   			 549	            Enhanced error handling in operator decomposition tests.   
+	3   			1416	                     Assertion logic correction for expected output.   
+	3   			1418	                            Addition of arithmetic operation support   
+	3   			1636	             Enhancing function signature with additional parameter.   
+	3   			1935	                      Function signature and return type correction.   
+	3   			2284	                 Enhanced error messaging for statistical assertions   
+	3   			2646	           Logic error in argument handling for device compatibility   
+	3   			2972	                     Signature simplification for analyzer functions   
+	3   			3059	              Incorrect input/weight binding order during execution.   
+	3   			3269	                  Logic refinement in command line argument handling   
+	3   			3530	                        Fixing data assignment to structured storage   
+	3   			3576	                Method signature enhancement for greater flexibility   
+	3   			4289	                  Conditional logic adjustment for loop termination.   
+	3   			4302	      Test addition to validate static argument handling in closures   
+	3   			4307	                            Function declaration mismatch correction   
+	3   			4308	                  Name consistency correction for callable functions   
+	3   			4311	                           Callable name correction for consistency.   
+	3   			4314	                            Naming convention adjustment for clarity   
+	3   			4316	                       Resolving dynamic argument misuse in closures   
+	3   			4326	                 Assertion update for dynamic application properties   
+	3   			4337	                 Handling of unresolved calls in operation arguments   
+	3   			4421	          Function output not correctly assigned, leading to errors.   
+	3   			4592	            Rename operation for clarity, fixing operation confusion   
+	3   			4616	                       Renaming for clarity and operational accuracy   
+	3   			4621	                         Naming ambiguity and operation misalignment   
+	3   			4622	                  Terminology refinement and operational correctness   
+	3   			4748	                        Consistency in data structure representation   
+	3   			4845	                     Method signature mismatch in Qiskit API change.   
+	3   			4869	                             Logical correction in operator handling   
+	3   			4870	                          Method invocation on incompatible operands   
+	3   			4872	                   Fixing expected commutator results for operators.   
+	3   			4937	                    Matrix assertion logic requiring backend context   
+	3   			4941	Incorrect function signature usage causing potential runtime errors.   
+	3   			4942	      Data representation inconsistency, user experience improvement   
+	4   			  74  	     Feature addition and performance improvement in variable handling.
+	4   			  81  	                                 Documentation formatting improvement. 
+	4   			  85  	            Test addition for improved error handling in SparsePauliOp 
+	4   			  91  	                            Optimization and clarity in code structure 
+	4   			 110  	                   Documentation enhancement for accuracy and clarity. 
+	4   			 111  	                         Documentation clarification or version update 
+	4   			 162  	                           Code refactor for consistent representation 
+	4   			 268  	              Language reference modification and clarity improvement. 
+	4   			 275  	                       Documentation enhancement for example resources 
+	4   			 276  	        Documentation improvement and educational resource enhancement 
+	4   			 279  	               Documentation and example implementation clarification. 
+	4   			 281  	                Adding new functionality and improving example clarity 
+	4   			 286  	                 Simplification and optimization of parameter handling 
+	4   			 289  	           Documentation enhancement for greater accuracy and clarity. 
+	4   			 302  	                  Correction of mathematical symbols in documentation. 
+	4   			 393  	          Documentation clarification regarding operation independence 
+	4   			 401  	            Documentation update for accuracy and resource reliability 
+	4   			 481  	                         Enhancing integration with tracing mechanisms 
+	4   			 489  	                     Method overriding for improved parameter handling 
+	4   			 490  	                        Class method addition to improve functionality 
+	4   			 538  	               Improved tape handling to prevent decomposition errors. 
+	4   			 552  	            Enhancements to transpile functionality for complex cases. 
+	4   			 574  	               Code refactoring to improve efficiency and readability. 
+	4   			 635  	                   Code style improvement and readability enhancement. 
+	4   			 716  	                Code deprecation due to restructuring or optimization. 
+	4   			 717  	             Code refactor to improve maintainability and performance. 
+	4   			 719  	           Code removal or refactor, possibly for maintenance purposes.
+	4   			 720  	          Module removal for enhanced maintainability and performance. 
+	4   			 834  	            Enhancing existing functionality with conditional inclusion
+	4   			 898  	                        Performance improvement using external module. 
+	4   			1151  	                 Addition of configuration options for new algorithms. 
+	4   			1190  	                        Code enhancement for better feedback handling. 
+	4   			1250  	                        Style and formatting improvement in test code. 
+	4   			1256  	               Code style improvement for readability and consistency. 
+	4   			1265  	            Code formatting, improving readability and maintainability 
+	4   			1266  	            Code refactoring for improved maintainability and clarity. 
+	4   			1268  	              Code refactoring for better readability and organization 
+	4   			1271  	                     Code refactoring for clarity and maintainability. 
+	4   			1277  	                                Code formatting and style improvement. 
+	4   			1285  	            Code style improvement for readability and maintainability 
+	4   			1310  	                    Code refactoring for improved readability clarity. 
+	4   			1330  	                           Code formatting change for test readability 
+	4   			1358  	                 Data structure enhancement for clarity and usability. 
+	4   			1360  	                     Addition of new functionality for computing costs.
+	4   			1425  	                    Code optimization for batch execution improvement. 
+	4   			1429  	        Enhanced job execution with multiple memory maps functionality 
+	4   			1430  	         Enhances functionality for batch memory management execution. 
+	4   			1460  	                     Incorporation of new algorithm module in library. 
+	4   			1463  	             Enhancement for operational functionality and modularity. 
+	4   			1506  	            Documentation improvement and specification clarification. 
+	4   			1508  	                      Clarification of file inclusion in documentation 
+	4   			1514  	                         Documentation improvement and include update. 
+	4   			1515  	                    Documentation enhancement and clarity improvement. 
+	4   			1516  	               Documentation enhancement for clarity and completeness. 
+	4   			1523  	                   Misleading code leading to specification confusion. 
+	4   			1539  	              Code refactoring and cleanup to improve maintainability. 
+	4   			1541  	                Refactoring for better encapsulation and functionality 
+	4   			1572  	                 Code simplification and optimization for performance. 
+	4   			1682  	Code consistency and formatting improvement; enhancing maintainability.
+	4   			1685  	              Improves operational efficiency and parameter management 
+	4   			1692  	                   Code optimization and unused functionality removal. 
+	4   			1918  	                    Documentation improvement for better user guidance.
+	4   			1942  	Comment clarification for better code readability and maintainability. 
+	4   			2057  	                 Comment clarification for accurate code understanding 
+	4   			2058  	                                Documentation bug, clarity improvement 
+	4   			2059  	                                              Documentation correction 
+	4   			2481  	                           Code adjustment to prevent execution errors 
+	4   			2629  	            Enhancement of data presentation and analysis capabilities 
+	4   			2634  	                    Documentation improvement for clarity and accuracy 
+	4   			2642  	                        Loss handling and parameter consistency update 
+	4   			2650  	                       Lambda function adjustment for added parameters 
+	4   			2652  	                             Code refactoring and added functionality. 
+	4   			2676  	                 Refactoring for consistency in documentation display. 
+	4   			2736  	                 Function deletion based on deprecation or redundancy. 
+	4   			2737  	                                  Code simplification and optimization 
+	4   			2738  	                  Import restructuring for better module organization. 
+	4   			2739  	                              Code refactoring to eliminate redundancy 
+	4   			2800  	                       Code execution environment change for accuracy. 
+	4   			2843  	                      Visual enhancement or documentation improvement. 
+	4   			2904  	                           Deprecation notice to guide users properly. 
+	4   			2981  	                               Type definition adjustment for analyzer 
+	4   			3004  	                    Extension of library for support of new algorithms 
+	4   			3017  	                  Documentation update and functionality clarification 
+	4   			3037  	                         Documentation update to reflect new resources 
+	4   			3223  	                   Unused function removal for clarity and efficiency. 
+	4   			3225  	                          Clarification of input parameter constraints 
+	4   			3266  	                         Code refactoring for consistency and clarity. 
+	4   			3285  	                         Result extraction and utilization adjustment. 
+	4   			3324  	                Enhanced API usability and method clarity improvement. 
+	4   			3362  	                 Refactor to enhance code clarity and maintainability. 
+	4   			3363  	                             Refactoring and test updates for clarity. 
+	4   			3449  	                  Documentation clarification and reference correction 
+	4   			3458  	                   Addition of documentation for educational resources 
+	4   			3459  	           Documentation improvement and educational content addition. 
+	4   			3465  	            Documentation addition for educational content enhancement 
+	4   			3469  	                  Documentation addition for clarity and organization. 
+	4   			3470  	            Enhancing model robustness and generalization capabilities 
+	4   			3477  	                         Documentation and functionality clarification 
+	4   			3503  	                         Highlighting known issues and usage cautions. 
+	4   			3507  	                     Code cleanup and optimization of an unused plugin.
+	4   			3528  	        Code refactoring for enhanced maintainability and readability. 
+	4   			3537  	                         Fixes iterator usage and redundant operations 
+	4   			3622  	                     Documentation enhancement or literature addition. 
+	4   			3623  	                            Documentation addition for missing example 
+	4   			3624  	          Expanding optimizer functionality with additional algorithms 
+	4   			3626  	            Introducing new functionality for optimization improvement 
+	4   			3629  	                 Optimization algorithm implementation and enhancement 
+	4   			3648  	                            Code refactor with improved type alignment 
+	4   			3690  	                         Refactor for module consistency and accuracy. 
+	4   			3773  	                           Code formatting for readability enhancement 
+	4   			3779  	                          Code formatting and readability improvement. 
+	4   			3783  	                              Code reformatting for clarity and style. 
+	4   			3788  	            Code restructuring to improve clarity and maintainability. 
+	4   			4060  	                               Code addition for missing functionality 
+	4   			4072  	                     Code generation improvement for pattern matching. 
+	4   			4111  	                            Code improvement for parameter efficiency. 
+	4   			4197  	                     Refactoring for better compatibility and accuracy 
+	4   			4327  	                    Variable assignment correction in output handling. 
+	4   			4338  	        Capability update for advanced computations and optimizations. 
+	4   			4368  	                                  Feature removal and codebase cleanup 
+	4   			4400  	                   Documentation improvement for usability enhancement 
+	4   			4401  	         Code enhancement for modular organization and error handling. 
+	4   			4403  	                       Documentation enhancement and feature addition. 
+	4   			4409  	                    Code optimization and library update enhancements. 
+	4   			4418  	      Documentation clarity improvement for consistent platform usage. 
+	4   			4433  	                  Refactoring for improved code execution and clarity. 
+	4   			4444  	                              Documentation update, name clarification 
+	4   			4445  	                         Documentation inconsistency about class usage 
+	4   			4449  	            Extension documentation links update in configuration file.
+	4   			4450  	                                     Documentation clarity enhancement 
+	4   			4451  	                     Documentation update for class references in code 
+	4   			4453  	                                       Documentation inconsistency fix 
+	4   			4455  	                 Documentation update for clear class reference usage. 
+	4   			4462  	                Terminology inconsistency correction in documentation. 
+	4   			4487  	                           Code formatting for readability improvement 
+	4   			4594  	                       Name clarification to enhance code readability. 
+	4   			4620  	                     Code clarification and proper naming consistency. 
+	4   			4624  	          Code restructuring for improved modularity and organization. 
+	4   			4703  	                 Code simplification and optimization for performance. 
+	4   			4787  	            Introduction of new functionality for improved performance 
+	4   			4803  	                                Abstract method addition, code cleanup 
+	4   			4822  	                               Code formatting and clarity improvement 
+	4   			4883  	      Documentation improvement, clarification of operator flow usage. 
+	4   			4911  	                            Code cleanup and documentation enhancement 
+	4   			4936  	                            Type casting and data handling adjustment. 
+	4   			4947  	                         Documentation removal for deprecated feature. 
+	4   			4966  	      Improves parameter configuration and iteration count adjustment. 
+	4   			4997  	                              Measurement scheduling code optimization 
+	4   			5022  	                    New functionality with fidelity estimator addition 
+	4   			5027  	       Refactoring for clarity and maintaining functional consistency. 
+	4   			5031  	                 Improved usage of optimization functions for clarity. 
+	5   			1467   		                                  API migration for backend access 
+	5   			1469   		                            API change for backend provider access.
+	5   			1627   		                 Namespace handling and new feature implementation 
+	5   			2183   		                Improved runtime error handling for better context 
+	5   			3375   		                           Code change for proper namespace usage. 
+	5   			3553   		                      Interface enhancement for backend connection.
+	5   			4255   		                    Namespace resolution and compilation error fix 
+	5   			4275   		                Namespace handling improvement for runtime safety. 
+	5   			4407   		                API update for improved functionality and support. 
+	5   			4589   		         Interface implementation update for correct functionality 
+	5   			4591   		Interface renaming to improve consistency in quantum method calls. 
+	5   			4617   		                     Interface name change for clarity and context 
+	5   			4618   		               Interface renaming to improve clarity and accuracy. 
+	5   			4619   		       Interface functionality improvement and abstraction change. 
+	5   			4840   		               API deprecation and migration to new best practices.
+	5   			5019   		                         Namespace addition for resolver conflicts 
+	6   			  90	               Implementation of new classes for DAG handling in circuits 	   
+	6   			  98	                         Improper handling of circuit layout information. 	   
+	6   			 178	                   Testing improvements for circuit structure validation. 	   
+	6   			 427	                                Inconsistent handling of observable types 	   
+	6   			 500	                 Optimization of circuit execution through auxiliary tape 	   
+	6   			 502	   Simulation reliability improvement for circuits with mid-measurements. 	   
+	6   			 514	                      Enhancement for dynamic circuit execution handling. 	   
+	6   			 544	                Fixing incorrect data type for trainable_params handling. 	   
+	6   			 550	              Enhanced compilation handling for mid-circuit measurements. 	   
+	6   			1474	                         Import missing for noise device functionalities. 	   
+	6   			1475	                  Implementation of noise modeling in quantum simulation. 	   
+	6   			1560	                       API enhancement for additional chip configurations 	   
+	6   			1571	                      Improved error handling and noise model integration 	   
+	6   			1668	                   Improved noise model parameter management and handling 	   
+	6   			1699	              New functionality for noise handling in quantum simulation. 	   
+	6   			1708	           Refactoring for enhanced accuracy of quantum noise operations. 	   
+	6   			1709	                   Functionality improvement for noise simulation clarity 	   
+	6   			1711	                       Improvement in noise model representation accuracy 	   
+	6   			1898	                                      Circuit parameterization issue fix. 	   
+	6   			1928	                    Unit test addition for circuit mapping functionality. 	   
+	6   			2636	          Enhancement of error handling and circuit parameter management. 	   
+	6   			2643	                       Code addition for handling operations in circuits. 	   
+	6   			2651	            New device layout and specifications added for functionality. 	   
+	6   			2666	                            Circuit compilation and unrolling discrepancy 	   
+	6   			3002	             Circuit initialization, transposition, and composition fixes 	   
+	6   			3003	                       Circuit optimization and correct composition usage 	   
+	6   			3056	                               Circuit representation clarity improvement 	   
+	6   			3058	                  Logic correction in circuit assignment and measurement. 	   
+	6   			3423	                    Improves variational state encapsulation and sampling 	   
+	6   			3454	Documentation and functionality enhancement for mid-circuit measurements. 	   
+	6   			3515	                               Addition of unit test for circuit handling 	   
+	6   			3516	                  Enhancements for noise modeling and simulation accuracy 	   
+	6   			3523	      Improvement of functionality and flexibility in circuit conversion. 	   
+	6   			3527	                       Backend configuration adjustment for circuit size. 	   
+	6   			3533	                          Addition of test cases for circuit measurement. 	   
+	6   			3535	                           Refactor in noise sampling process for clarity 	   
+	6   			3541	            Improvement to operation fusion eligibility checks for noise. 	   
+	6   			3548	                Improved handling of control-flow structures in circuits. 	   
+	6   			3549	     Circuit optimization enhancement, reduced parameters in compilation. 	   
+	6   			3550	                     Noise simulation error in dynamic circuit processing 	   
+	6   			3552	                     Addition of new module for sampling functionalities. 	   
+	6   			3554	       Enhanced sampling capability with structured measurement semantics 	   
+	6   			3555	             Enhancement to sampler functionality leveraging AerSimulator 	   
+	6   			3569	               Backend configuration adjustments for simulation accuracy. 	   
+	6   			3588	                 Updating backend for accurate noise modeling simulation. 	   
+	6   			3592	                           Improved target configuration for noise models 	   
+	6   			3688	                 Correcting circuit construction method for compatibility 	   
+	6   			4192	                   Circuit conversion and compatibility issue resolution. 	   
+	6   			4408	                      Improved circuit execution consistency and accuracy 	   
+	6   			4412	                       Backend selection and noise mitigation enhancement 	   
+	6   			4417	                       Improved simulation fidelity and noise management. 	   
+	6   			4419	                  Improvement in circuit execution efficiency and clarity 	   
+	6   			4422	                      Adding new functionalities for circuit optimization 	   
+	6   			4424	                             Enhance noise handling for circuit execution 	   
+	6   			4425	                               Circuit conversion correctness improvement 	   
+	6   			4442	       Enhancements to visualization and usability in circuit generation. 	   
+	6   			4443	                  Inconsistent usage of circuit variable names and types. 	   
+	6   			4447	                             Circuit construction and naming adjustments. 	   
+	6   			4483	   Implementation of new sampler functionality, performance improvements. 	   
+	6   			4485	          Configuration reduction for benchmarking; no specific hardware. 	   
+	6   			4488	        Circuit construction misalignment of control-target relationships 	   
+	6   			4561	                    Circuit optimization and subsystem reassignment issue 	   
+	6   			4705	                     Set operation enhancement for noise model validation 	   
+	6   			4777	                            Logic error correction in circuit simulation. 	   
+	6   			4978	                       Code refactor for circuit optimization and clarity 	   
+	6   			4984	                       Incomplete circuit preparation functionality added 	   
+	6   			4995	              Code restructuring, added functions for circuit management. 	   
+	6   			5015	             Device configuration correction for proper graph generation. 	   
+	6   			5016	                     Filtering invalid operations from circuit processing 	   
+	6   			5021	         Implementation of time crystal circuit generation functionality. 	   
+	6   			5026	                  Improves circuit optimization and management procedures 	   
+	6   			5028	                   Improved circuit optimization and measurement handling 	   
+
+102                     7    103   
+103                     7    104   
+512                     7    513   
+536                     7    537   
+1447                    7   1448   
+1835                    7   1836   
+2620                    7   2621   
+3226                    7   3227   
+3228                    7   3229   
+3437                    7   3438   
+3440                    7   3441   
+3446                    7   3447   
+3475                    7   3476   
+3593                    7   3594   
+3752                    7   3753   
+4585                    7   4586   
+4587                    7   4588   
+4777                    7   4778   
+4932                    7   4933   
+4959                    7   4960   
+
+                                                                  Bug Pattern  
+102                      Optimization of measurement probability computation   
+103                  Performance optimization for probabilistic calculations   
+512                    Incorrect gradient calculation due to parameter order   
+536                  Enhanced gradient computation robustness for operators.   
+1447          Code modification for enhanced simulation control and clarity.   
+1835                  Validation of external potential gradient calculations   
+2620                      Increased tolerance for numerical precision errors   
+3226                     Type promotion for differential equations handling.   
+3228                                   NaN handling in gradient calculations   
+3437   Fixes gradient equivalence among complex, real, and mixed parameters.   
+3440           Gradient calculation precision error in variational settings.   
+3446            Improper complex gradient computation and parameter handling   
+3475               Gradient computation adjustment for accurate evaluations.   
+3593                    Improved accuracy in state probability computations.   
+3752            Correction of mathematical errors in amplitude calculations.   
+4585                Increased tolerance for operation precision verification   
+4587             Update intrinsic operations for better simulation accuracy.   
+4777                          Enhancement of simulation realism and accuracy   
+4932                              Random number generation inconsistency fix   
+4959                Implementing a loss function in a variational algorithm.   
+      Quantum Bug Cluster  Index  \
+40                      8     41   
+454                     8    455   
+455                     8    456   
+1463                    8   1464   
+1491                    8   1492   
+1492                    8   1493   
+1496                    8   1497   
+1908                    8   1909   
+1924                    8   1925   
+1925                    8   1926   
+1928                    8   1929   
+2655                    8   2656   
+2801                    8   2802   
+3005                    8   3006   
+3022                    8   3023   
+3025                    8   3026   
+3596                    8   3597   
+3656                    8   3657   
+3691                    8   3692   
+3693                    8   3694   
+3696                    8   3697   
+4425                    8   4426   
+4833                    8   4834   
+4837                    8   4838   
+4841                    8   4842   
+4842                    8   4843   
+4843                    8   4844   
+4938                    8   4939   
+5008                    8   5009   
+5037                    8   5038   
+
+                                                                   Bug Pattern  
+40                Addition of new classes and imports in DFT-related modules.   
+454                                   Code optimization and import adjustment   
+455              Import addition for enhanced Qutrit operations functionality   
+1463                        Import addition for missing pulse functionalities   
+1491                      Import enhancement to include pulse functionalities   
+1492                 Import addition for computational algorithm availability   
+1496                        Missing module imports for pulse functionalities.   
+1908   Inclusion of additional quantum functionality for tensor calculations.   
+1924     Module implementation and feature enhancement for tensor operations.   
+1925   Code refactoring and feature addition to enable tensor transformation.   
+1928                     Addition of a new module for enhanced compatibility.   
+2655             Adjusting import statements for module accessibility issues.   
+2801                             Import path correction for utility function.   
+3005                         New module addition for Qiskit machine learning.   
+3022                          Import change to enhance tutorial functionality   
+3025                  Import modification for Jupyter notebook compatibility.   
+3596               Enhancement to existing functionality in tensor operations   
+3656                                  Module path correction in rewrite rules   
+3691                          Import path correction for module functionality   
+3693                  Transition from deprecated module to stable alternative   
+3696                             Import structure correction to align modules   
+4425                             Import change to align with library updates.   
+4833                   Change of import library for functionality improvement   
+4837                   Import adjustment for improved tutorial functionality.   
+4841        Module replacement for improved compatibility and feature access.   
+4842                     Change of library import for enhanced functionality.   
+4843                   Replace import for specific features or compatibility.   
+4938                              Removal of unused import to streamline code   
+5008                         Module name correction for import functionality.   
+5037                           Import correction and parameter simplification   
+      Quantum Bug Cluster  Index  \
+171                     9    172   
+1431                    9   1432   
+1713                    9   1714   
+2703                    9   2704   
+2704                    9   2705   
+3102                    9   3103   
+3250                    9   3251   
+4152                    9   4153   
+4296                    9   4297   
+
+                                                      Bug Pattern  
+171             Precision improvement during state normalization   
+1431            Ensure correct state management during execution   
+1713     Resource management and state maintenance improvements.   
+2703                Fixing program state management and behavior   
+2704                Refactoring and state management improvement   
+3102   Refactoring for better task state management and clarity.   
+3250       State representation adjustment in teleported output.   
+4152                        Resource management code improvement   
+4296            Measurement function update for state resetting.   
+      Quantum Bug Cluster  Index  \
+453                    10    454   
+4796                   10   4797   
+4798                   10   4799   
+
+                                                                   Bug Pattern  
+453                     Addition of new features and community contributions.   
+4796        Integration of multi-heritage classes to enhance functionalities.   
+4798   Enhanced functionality via inheritance, improved PAULI representation.   
+      Quantum Bug Cluster  Index  \
+1374                   11   1375   
+1377                   11   1378   
+1379                   11   1380   
+1380                   11   1381   
+1384                   11   1385   
+1649                   11   1650   
+1654                   11   1655   
+1930                   11   1931   
+4954                   11   4955   
+4992                   11   4993   
+
+                                                                         Bug Pattern  
+1374                          Resource estimation for THC Hamiltonians improvement.   
+1377                 Hamiltonian properties enhancement for eigenvalue calculation.   
+1379                    Feature enhancement for Hamiltonian properties integration.   
+1380             Incorrect calculation of Hamiltonian properties, numerical errors.   
+1384   Enhanced computation of Hamiltonian properties through better normalization.   
+1649                                     Expectation value calculation improvement.   
+1654                Enhancements for expectation calculations in quantum mechanics.   
+1930                    Incorrect output for quantum state expectation calculation.   
+4954                            Expectation calculation fix in Hamiltonian methods.   
+4992                     Feature addition and refactoring of Hamiltonian functions.   
+      Quantum Bug Cluster  Index  \
+3601                   12   3602   
+4198                   12   4199   
+4659                   12   4660   
+
+                                                         Bug Pattern  
+3601               Debugging output and buffer dimensionality issue   
+4198   Edge mapping correction, utilizing an upair utility function   
+4659                   Observable target shape validation error fix   
+      Quantum Bug Cluster  Index  \
+1435                   13   1436   
+1982                   13   1983   
+4061                   13   4062   
+4073                   13   4074   
+4077                   13   4078   
+4079                   13   4080   
+4080                   13   4081   
+
+                                                           Bug Pattern  
+1435         fixing incorrect dictionary representation with aliasing   
+1982    Adding dictionary entries for spell-checking or code linting.   
+4061   Enhancing extensibility for future dialects and optimizations.   
+4073      New functionality addition for language dialect connection.   
+4077           Missing dialect registration in context initialization   
+4079             Adding dialect registration for enhanced modularity.   
+4080                 Code refactoring to optimize dialect management.   
+      Quantum Bug Cluster  Index  \
+1831                   14   1832   
+2775                   14   2776   
+4445                   14   4446   
+
+                                                    Bug Pattern  
+1831                New test input for MP2 energy correlation.   
+2775   Addition of Qelectron test coverage within CI pipeline.   
+4445        Naming clarification for `CircBox` and inverse QFT   
+      Quantum Bug Cluster  Index  \
+4874                   15   4875   
+4875                   15   4876   
+
+                                                      Bug Pattern  
+4874                Warning addition and spin configuration fix.   
+4875   Regression test for angular momentum calculation accuracy   
+      Quantum Bug Cluster  Index  \
+401                    16    402   
+1668                   16   1669   
+2336                   16   2337   
+3054                   16   3055   
+3538                   16   3539   
+3539                   16   3540   
+3595                   16   3596   
+3747                   16   3748   
+4160                   16   4161   
+4163                   16   4164   
+4168                   16   4169   
+4387                   16   4388   
+4892                   16   4893   
+
+                                                                   Bug Pattern  
+401    Documentation improvement, clarifying assumptions on state preparation   
+1668                             Initialization of gate types in constructor.   
+2336             Backend initialization and target verification improvements.   
+3054                 Parameter initialization adjustment for improved results   
+3538                                    Initialization after reset logic fix.   
+3539                        Logic error in initialization handling post-reset   
+3595                        Parameter handling and initialization correction.   
+3747      Enhanced random state initialization with dimensionality parameter.   
+4160                              Adds state validation after initialization.   
+4163                       State initialization and representation validation   
+4168                                Type handling in parameter initialization   
+4387                        Missing parameters during function initialization   
+4892                Fixing state initialization and output formatting issues.   
+      Quantum Bug Cluster  Index  \
+81                     17     82   
+92                     17     93   
+166                    17    167   
+179                    17    180   
+181                    17    182   
+427                    17    428   
+438                    17    439   
+439                    17    440   
+440                    17    441   
+458                    17    459   
+460                    17    461   
+462                    17    463   
+463                    17    464   
+471                    17    472   
+498                    17    499   
+502                    17    503   
+514                    17    515   
+517                    17    518   
+521                    17    522   
+526                    17    527   
+538                    17    539   
+544                    17    545   
+545                    17    546   
+572                    17    573   
+691                    17    692   
+720                    17    721   
+898                    17    899   
+1341                   17   1342   
+1360                   17   1361   
+1378                   17   1379   
+1414                   17   1415   
+1422                   17   1423   
+1423                   17   1424   
+1476                   17   1477   
+1502                   17   1503   
+1524                   17   1525   
+1546                   17   1547   
+1577                   17   1578   
+1660                   17   1661   
+1666                   17   1667   
+1687                   17   1688   
+1699                   17   1700   
+1932                   17   1933   
+1936                   17   1937   
+1942                   17   1943   
+1973                   17   1974   
+2118                   17   2119   
+2506                   17   2507   
+2632                   17   2633   
+2644                   17   2645   
+2652                   17   2653   
+2660                   17   2661   
+2702                   17   2703   
+2705                   17   2706   
+2706                   17   2707   
+2730                   17   2731   
+2731                   17   2732   
+2732                   17   2733   
+2733                   17   2734   
+2739                   17   2740   
+2798                   17   2799   
+2991                   17   2992   
+2994                   17   2995   
+3056                   17   3057   
+3264                   17   3265   
+3283                   17   3284   
+3307                   17   3308   
+3531                   17   3532   
+3579                   17   3580   
+4096                   17   4097   
+4105                   17   4106   
+4162                   17   4163   
+4164                   17   4165   
+4190                   17   4191   
+4194                   17   4195   
+4212                   17   4213   
+4292                   17   4293   
+4300                   17   4301   
+4335                   17   4336   
+4346                   17   4347   
+4374                   17   4375   
+4380                   17   4381   
+4385                   17   4386   
+4386                   17   4387   
+4392                   17   4393   
+4401                   17   4402   
+4481                   17   4482   
+4775                   17   4776   
+4778                   17   4779   
+4779                   17   4780   
+4870                   17   4871   
+4876                   17   4877   
+4963                   17   4964   
+4968                   17   4969   
+4987                   17   4988   
+5022                   17   5023   
+5039                   17   5040   
+
+                                                                                   Bug Pattern  
+81                                      Input validation to prevent invalid state operations.   
+92                                            Input validation and error handling enhancement   
+166                                      Removal of redundant test case, code simplification.   
+179                                Test case adjustments for improved diagram representation.   
+181                                Diagram comparison adjustment for correct test validation.   
+427                                             Type conversion for consistency and precision   
+438                                    Data type consistency improvement in results validation  
+439                                            Sample usage modification for observable tests   
+440                                               Simplifying test parameters for observables   
+458                                Test case enhancement and observable handling improvement.   
+460                                    Functionality enhancement for better error consistency   
+462                            Improved parameter comparison and tolerance checking in tests.   
+463                                        Enhancement for operator equality checks in tests.   
+471                           Enhancements to measurement handling across multiple functions.   
+498                              Performance enhancement through JIT in measurement processes   
+502                                           Improper type checks for measurement operations   
+514                    Mid-measurement sampling correction and state application improvement.   
+517                          Measurement processing enhancement, validity check introduction.   
+521                                          Fixing measurement input handling and validation   
+526                             Error handling improvement, adding resilience to compilation.   
+538                                               Exception handling for batched input errors   
+544                                           Error message improvement in exception handling   
+545                                                     Error message consistency improvement   
+572                                                    Unimplemented feature removal in tests   
+691                                            Adjusted numerical precision in test assertions  
+720                               Test case removal or optimization for improved performance.   
+898                                         Performance comparison and correctness validation   
+1341                                       Correction of mathematical assertion in unit test.   
+1360                                     Integration of unit tests for functional validation.   
+1378                                     Addition of unit tests for computational correctness   
+1414                                             Instruction equality consistency improvement   
+1422                        Output instruction filtering improvement for calibration outputs.   
+1423                               Calibration handling and program composition verification.   
+1476                                     Measurement logic fixes and readability improvements   
+1502                                             Standard compliance and clarity improvement.   
+1524                                    Specification compliance and consistency improvement.   
+1546                                           Input validation and functionality enhancement   
+1577                                           Input validation for control and target qubits   
+1660                             Null pointer handling and control flow checking improvement.   
+1666                                         Input validation and error handling improvements   
+1687                             Performance improvement, simplified logic for unitary check.   
+1699   Improving stability and correctness through appropriate assertions and noise handling.   
+1932                                     Exception handling and input validation improvement.   
+1936                               Incorrect operation handling during measurement processes.   
+1942                                       Adding test for controls disabled by measurements.   
+1973                                          Code readability improvement in loop iteration.   
+2118                                           Integration test and error handling additions.   
+2506                                     Formatting inconsistency and readability improvement   
+2632                                  Parameter adjustment for enhanced measurement accuracy.   
+2644                             Improved input validation and mode handling in TDM programs.   
+2652                                  enhancement of validation and error handling procedures   
+2660                                                Compilation state validation improvement.   
+2702                                         Locking integrity check during unroll operation.   
+2705                                              Attribute usage correction in testing logic   
+2706                            Test program behavior after unrolling and rolling operations.   
+2730                                      Renamed test and added integrity check for copying.   
+2731                       Testing for correct memory reference handling and object integrity   
+2732                    Enhancement for program equivalence checks and measurement execution.   
+2733                                  Enhancement of program equality checking functionality.   
+2739                                     Equality and equivalence operator checks improvement   
+2798                                        Executor replacement for accurate test simulation   
+2991                                        Code improvement for test coverage and robustness   
+2994                                          Addition of test files for validation purposes.   
+3056                                                  Parameter management and validation fix   
+3264                                  Enhancements in measurement result handling and display   
+3283                                       Improper measurement result retrieval and handling   
+3307                                  Enhanced safety checks and improved exception handling.   
+3531                                     Type mismatch in sample handling during measurements   
+3579                                       Memory estimation and allocation logic adjustment.   
+4096                                                Add tests for boolean to int comparisons.   
+4105                                             Type validation and error handling addition.   
+4162                                             Added assertions for debug state validation.   
+4164                                             Assertion addition for test state validation   
+4190                                                       Parsing error handling improvement   
+4194                                        Adding tests for new features or functionalities.   
+4212                                           Missing checks for auto-generated expressions.   
+4292                                         Test enhancement for loop evaluation correctness   
+4300              Improvement in expression handling, resolve uncertainty in callable checks.   
+4335                                         Enhanced error handling and dynamic value checks   
+4346                                    Error handling for dynamic measurement-based features   
+4374                          Removal of tests contingent on specific optimizer availability.   
+4380                                             Improved ordering verification and handling.   
+4385                                          Removal of obsolete test cases and dependencies   
+4386                                    Removal of obsolete tests for Phoenics functionality.   
+4392                            Test skipping logic update, corrects test execution behavior.   
+4401                                              Test implementation for QEM method validity   
+4481                                             Input validation and robustness improvement.   
+4775                                    Measurement management enforcement and error raising.   
+4778                          Improves error handling and adds input validation for measures.   
+4779                                     Test for measurement accuracy under noise conditions   
+4870                                                  Incorrect equality check in unit tests.   
+4876                                       Logic error correction in UCC configuration check.   
+4963                                  Enhancing statistical reliability in measurement tests.   
+4968                                                      Test marked to skip due to failure.   
+4987                                         Enhanced data processing for measurement results   
+5022                                              Optimization of test efficiency and clarity   
+5039                                   Redundant equivalency check removal in placement test.   
+      Quantum Bug Cluster  Index  \
+1672                   18   1673   
+1690                   18   1691   
+
+                                                    Bug Pattern  
+1672                   Layer cycle time calculation adjustment   
+1690   Isometry decomposition implementation and enhancements.   
+      Quantum Bug Cluster  Index                                 Bug Pattern
+1409                   19   1410           Variable Declaration Order Issue 
+4290                   19   4291   Scope-related variable assignment error. 
+      Quantum Bug Cluster  Index  \
+3368                   20   3369   
+3375                   20   3376   
+
+                                          Bug Pattern  
+3368                  Fixing header file path issue.   
+3375   Header file path correction for organization.   
+      Quantum Bug Cluster  Index                                Bug Pattern
+3602                   21   3603   Changing hardcoded values to parameters 
+      Quantum Bug Cluster  Index  \
+3790                   22   3791   
+
+                                                          Bug Pattern  
+3790   Fixing outdated references with correct citation information.   
+      Quantum Bug Cluster  Index  \
+3558                   23   3559   
+4088                   23   4089   
+
+                                                  Bug Pattern  
+3558        GPU build optimization and compatibility testing   
+4088   GPU utilization optimization for multi-GPU workflows.   
+      Quantum Bug Cluster  Index  \
+1499                   24   1500   
+4309                   24   4310   
+
+                                                   Bug Pattern  
+1499   Incorrect variable usage in broadcasting code samples.   
+4309              Incorrect callable name in output recording   
+      Quantum Bug Cluster  Index  \
+1563                   25   1564   
+2780                   25   2781   
+3008                   25   3009   
+3180                   25   3181   
+5013                   25   5014   
+
+                                                             Bug Pattern  
+1563       Serialization and deserialization bug due to format mismatch.  
+2780                Improved serialization and module import mechanisms   
+3008                  Serialization error fix in fidelity kernel class.   
+3180           Serialization improvement and data structure management.   
+5013   Adding serialization functionality for enhanced interoperability   
+      Quantum Bug Cluster  Index  \
+148                    26    149   
+193                    26    194   
+194                    26    195   
+195                    26    196   
+196                    26    197   
+197                    26    198   
+198                    26    199   
+199                    26    200   
+200                    26    201   
+201                    26    202   
+202                    26    203   
+203                    26    204   
+204                    26    205   
+205                    26    206   
+208                    26    209   
+209                    26    210   
+210                    26    211   
+211                    26    212   
+212                    26    213   
+214                    26    215   
+215                    26    216   
+216                    26    217   
+217                    26    218   
+218                    26    219   
+219                    26    220   
+220                    26    221   
+221                    26    222   
+223                    26    224   
+224                    26    225   
+225                    26    226   
+226                    26    227   
+227                    26    228   
+228                    26    229   
+230                    26    231   
+231                    26    232   
+232                    26    233   
+234                    26    235   
+235                    26    236   
+237                    26    238   
+239                    26    240   
+241                    26    242   
+242                    26    243   
+243                    26    244   
+244                    26    245   
+245                    26    246   
+246                    26    247   
+248                    26    249   
+249                    26    250   
+251                    26    252   
+252                    26    253   
+253                    26    254   
+254                    26    255   
+255                    26    256   
+256                    26    257   
+257                    26    258   
+258                    26    259   
+260                    26    261   
+262                    26    263   
+319                    26    320   
+640                    26    641   
+818                    26    819   
+1205                   26   1206   
+1206                   26   1207   
+1207                   26   1208   
+1208                   26   1209   
+1209                   26   1210   
+1210                   26   1211   
+1356                   26   1357   
+1371                   26   1372   
+1461                   26   1462   
+1517                   26   1518   
+1521                   26   1522   
+1913                   26   1914   
+1915                   26   1916   
+2785                   26   2786   
+2995                   26   2996   
+2996                   26   2997   
+2999                   26   3000   
+3018                   26   3019   
+3020                   26   3021   
+3028                   26   3029   
+3210                   26   3211   
+3211                   26   3212   
+3212                   26   3213   
+3213                   26   3214   
+3214                   26   3215   
+3215                   26   3216   
+3216                   26   3217   
+3217                   26   3218   
+3218                   26   3219   
+3219                   26   3220   
+3220                   26   3221   
+3507                   26   3508   
+3528                   26   3529   
+3590                   26   3591   
+3646                   26   3647   
+3676                   26   3677   
+4204                   26   4205   
+4397                   26   4398   
+4405                   26   4406   
+4409                   26   4410   
+4412                   26   4413   
+4414                   26   4415   
+4473                   26   4474   
+4836                   26   4837   
+4975                   26   4976   
+4991                   26   4992   
+4998                   26   4999   
+5032                   26   5033   
+
+                                                                    Bug Pattern  
+148              Version compatibility adjustment for qiskit-aer dependencies.   
+193                              SDK version update for bug fixes or features.   
+194                 SDK version upgrade for improved performance or bug fixes.   
+195               SDK version update with potential bug fixes and improvements.  
+196              Version upgrade for enhanced functionality and compatibility.   
+197                         SDK version upgrade for stability and performance.   
+198                Version upgrade for performance and stability improvements.   
+199                          SDK version update for bug fixes and enhancements   
+200                              SDK version update and dependency resolution.   
+201             SDK version upgrade for stability and performance improvements   
+202                              SDK version update for stability improvements   
+203    SDK version upgrade, addressing existing bugs or enhancing performance.   
+204                         Dependency update for stability and compatibility.   
+205                                         SDK version upgrade for bug fixes.   
+208              Dependency version update for improved stability or features.   
+209                     SDK version upgrade for enhanced performance or fixes.   
+210                         SDK version upgrade for improvements or bug fixes.   
+211                SDK version update for performance or feature improvements.   
+212                             SDK version update for compatibility and fixes   
+214                  Library upgrade for improved functionality and bug fixes.   
+215                         SDK version upgrade for stability and enhancements   
+216                  SDK version upgrade, potential bug fixes and improvements   
+217                        SDK version upgrade for enhancements and bug fixes.   
+218                             Version upgrade for bug fixes or enhancements.   
+219                        Upgrade of SDK for enhanced performance or features   
+220                                   Package version update for compatibility   
+221                            Library version update for enhanced performance   
+223                                   Dependency version upgrade for bug fixes   
+224                        Version update for improved stability and features.   
+225                 Dependency update for increased stability and performance.   
+226                     Package version upgrade for bug fixes and improvements   
+227                          SDK and package version upgrade for improvements.   
+228                                     Dependency update for library versions   
+230                              Version update for stability and new features   
+231                SDK version update for improved functionality or bug fixes.   
+232              SDK version upgrade for bug fixes and performance enhancement   
+234          SDK version upgrade, potentially resolving regressions or issues.   
+235                   Dependency update for enhanced performance and stability   
+237    Version upgrade, likely resolves compatibility and functionality issues   
+239                            SDK version upgrade for bug fixes and features.   
+241                      Package version upgrade for bug fixes or enhancements   
+242                          Dependency update for bug fixes and improvements.   
+243                   Dependency version update for stability and performance.   
+244                     Version update for improved stability and performance.   
+245                 Dependency version update for better performance or fixes.   
+246                                    dependency version update for bug fixes   
+248                                SDK version upgrade and potential bug fixes   
+249                     Package version update for bug fixes and improvements.   
+251                       SDK version upgrade for better support and features.   
+252                     Dependency version upgrade for enhancements and fixes.   
+253                     Package version update for bug fixes and enhancements.   
+254                            SDK version update to resolve potential issues.   
+255                   SDK version update for better stability and performance.   
+256                          SDK version update for bug fixes or enhancements.   
+257                    SDK version upgrade to enhance performance or fix bugs.   
+258                          SDK version update for enhancements or bug fixes.   
+260                         SDK version update for bug fixes and improvements.   
+262                Dependency upgrade for improved SDK features and bug fixes.   
+319                                Dependency management for qiskit-tutorials.   
+640                         Dependency version rectification for qsim library.   
+818                      Version upgrade and additional dependency integration   
+1205                Version upgrade for functionality or security improvements   
+1206                          Library version update to improve functionality.   
+1207                         Dependency upgrade for bug fixes or enhancements.   
+1208              Dependency update for performance and security improvements.   
+1209          Library version upgrade, likely resolves bugs or security issues   
+1210                            Upgrade version to resolve dependency conflict   
+1356           Resource management integration for estimates and dependencies.   
+1371      Conditional imports for dependency management in resource estimation   
+1461                           Adding new layer dependencies for extensibility   
+1517                         Incomplete standard library implementation update   
+1521                         Version update for enhanced functionality or fix.   
+1913                                     Adding new dependency to CI workflow.   
+1915          Dependency registration for mathematical operations improvement.   
+2785                         Conditional import to manage dependencies better.   
+2995                                     Dependency version update for bug fix   
+2996         Dependency version update, feature enhancement, or minor bug fix.   
+2999                                  Version upgrade for library dependencies   
+3018              Fixes to enhance job management and dependency stabilization.  
+3020                              Dependency adjustment for improved execution   
+3028                    Dependency adjustment for better module compatibility.   
+3210                            Version update for libraries and dependencies.   
+3211                 SDK version upgrade for stability or feature enhancement.   
+3212                            SDK version upgrade for improved functionality   
+3213                      Dependency update for improved features or bug fixes   
+3214                  SDK version upgrade for stability or compatibility fixes   
+3215                     Version upgrade for feature enhancements or bug fixes   
+3216                              SDK version update for enhancements or fixes   
+3217               Dependency update for enhanced functionality and stability.   
+3218                        SDK version update for compatibility improvements.   
+3219                         Dependency update for bug fixes and improvements.   
+3220                  SDK version update for improved functionality and fixes.   
+3507                                  Dependency version update for bug fixes.   
+3528                     Dependency management and backend compatibility issue   
+3590                          Compatibility adjustment for version differences   
+3646                            Type compatibility change for updated library.   
+3676                                  Code structure and dependency correction   
+4204                                                   Edge type mismanagement   
+4397                       Improved dependency management and method discovery   
+4405               Dependency upgrade for improved integration and reliability   
+4409                       Library Version Update or Functionality Improvement   
+4412                              Update dependency version and backend change   
+4414                            Library upgrade and compatibility improvement.   
+4473                               Dependency update for improved GPU support.   
+4836                         Replacing library for improved features or fixes.   
+4975              Dependency addition for missing features or functionalities.   
+4991   Dependency management to ensure proper library access for computations.   
+4998                           Dependency addition for enhanced model support.   
+5032      Dependency upgrade due to library improvements and feature addition.   
+      Quantum Bug Cluster  Index  \
+2120                   27   2121   
+3513                   27   3514   
+3523                   27   3524   
+3570                   27   3571   
+3571                   27   3572   
+4170                   27   4171   
+4172                   27   4173   
+4173                   27   4174   
+4175                   27   4176   
+4176                   27   4177   
+4180                   27   4181   
+4181                   27   4182   
+4183                   27   4184   
+4415                   27   4416   
+
+                                                           Bug Pattern  
+2120        Backend compatibility and command validation improvement.   
+3513                       Functionality bug fix in backend settings.   
+3523     Integration of conversion utility for backend compatibility.   
+3570            Backend configuration and method enumeration bug fix.   
+3571   Test cases for backend configuration and behavior verification   
+4170                     Incorrect backend parameter in function call   
+4172         Skipping tests for specific backend compatibility issues   
+4173             Backend compatibility adjustment for shot execution.   
+4175         Backend-specific test conditionals added for correctness   
+4176                    Incorrect backend execution in circuit tests.   
+4180                       Backend compatibility adjustment for tests   
+4181            Backend compatibility adjustments and shot management   
+4183             Conditional test skipping for backend compatibility.   
+4415                              Compatibility issue; backend upgrade  
+      Quantum Bug Cluster  Index  \
+46                     28     47   
+74                     28     75   
+82                     28     83   
+83                     28     84   
+86                     28     87   
+104                    28    105   
+105                    28    106   
+152                    28    153   
+186                    28    187   
+188                    28    189   
+264                    28    265   
+270                    28    271   
+271                    28    272   
+276                    28    277   
+279                    28    280   
+281                    28    282   
+289                    28    290   
+381                    28    382   
+435                    28    436   
+437                    28    438   
+452                    28    453   
+456                    28    457   
+457                    28    458   
+459                    28    460   
+473                    28    474   
+482                    28    483   
+500                    28    501   
+505                    28    506   
+509                    28    510   
+515                    28    516   
+527                    28    528   
+528                    28    529   
+531                    28    532   
+532                    28    533   
+534                    28    535   
+535                    28    536   
+539                    28    540   
+541                    28    542   
+559                    28    560   
+562                    28    563   
+893                    28    894   
+894                    28    895   
+896                    28    897   
+1217                   28   1218   
+1352                   28   1353   
+1355                   28   1356   
+1362                   28   1363   
+1367                   28   1368   
+1369                   28   1370   
+1385                   28   1386   
+1388                   28   1389   
+1396                   28   1397   
+1406                   28   1407   
+1407                   28   1408   
+1408                   28   1409   
+1427                   28   1428   
+1458                   28   1459   
+1460                   28   1461   
+1464                   28   1465   
+1480                   28   1481   
+1494                   28   1495   
+1495                   28   1496   
+1500                   28   1501   
+1506                   28   1507   
+1510                   28   1511   
+1532                   28   1533   
+1544                   28   1545   
+1552                   28   1553   
+1572                   28   1573   
+1573                   28   1574   
+1574                   28   1575   
+1619                   28   1620   
+1621                   28   1622   
+1623                   28   1624   
+1624                   28   1625   
+1643                   28   1644   
+1657                   28   1658   
+1670                   28   1671   
+1671                   28   1672   
+1680                   28   1681   
+1682                   28   1683   
+1683                   28   1684   
+1688                   28   1689   
+1692                   28   1693   
+1693                   28   1694   
+1697                   28   1698   
+1709                   28   1710   
+1826                   28   1827   
+1830                   28   1831   
+1895                   28   1896   
+1904                   28   1905   
+1907                   28   1908   
+1911                   28   1912   
+1918                   28   1919   
+1926                   28   1927   
+1937                   28   1938   
+1938                   28   1939   
+1964                   28   1965   
+2066                   28   2067   
+2072                   28   2073   
+2079                   28   2080   
+2101                   28   2102   
+2115                   28   2116   
+2216                   28   2217   
+2329                   28   2330   
+2330                   28   2331   
+2333                   28   2334   
+2338                   28   2339   
+2339                   28   2340   
+2342                   28   2343   
+2346                   28   2347   
+2626                   28   2627   
+2631                   28   2632   
+2636                   28   2637   
+2657                   28   2658   
+2658                   28   2659   
+2659                   28   2660   
+2661                   28   2662   
+2734                   28   2735   
+2800                   28   2801   
+2805                   28   2806   
+2983                   28   2984   
+2984                   28   2985   
+2992                   28   2993   
+3006                   28   3007   
+3007                   28   3008   
+3010                   28   3011   
+3014                   28   3015   
+3059                   28   3060   
+3177                   28   3178   
+3179                   28   3180   
+3187                   28   3188   
+3192                   28   3193   
+3208                   28   3209   
+3230                   28   3231   
+3292                   28   3293   
+3319                   28   3320   
+3325                   28   3326   
+3329                   28   3330   
+3385                   28   3386   
+3452                   28   3453   
+3465                   28   3466   
+3508                   28   3509   
+3510                   28   3511   
+3511                   28   3512   
+3555                   28   3556   
+3559                   28   3560   
+3562                   28   3563   
+3563                   28   3564   
+3564                   28   3565   
+3566                   28   3567   
+3577                   28   3578   
+3583                   28   3584   
+3584                   28   3585   
+3600                   28   3601   
+3624                   28   3625   
+3670                   28   3671   
+3695                   28   3696   
+3754                   28   3755   
+3774                   28   3775   
+3780                   28   3781   
+3789                   28   3790   
+4056                   28   4057   
+4062                   28   4063   
+4066                   28   4067   
+4106                   28   4107   
+4128                   28   4129   
+4161                   28   4162   
+4174                   28   4175   
+4179                   28   4180   
+4182                   28   4183   
+4193                   28   4194   
+4297                   28   4298   
+4298                   28   4299   
+4299                   28   4300   
+4308                   28   4309   
+4312                   28   4313   
+4359                   28   4360   
+4361                   28   4362   
+4368                   28   4369   
+4389                   28   4390   
+4422                   28   4423   
+4426                   28   4427   
+4428                   28   4429   
+4429                   28   4430   
+4430                   28   4431   
+4546                   28   4547   
+4547                   28   4548   
+4562                   28   4563   
+4589                   28   4590   
+4592                   28   4593   
+4595                   28   4596   
+4596                   28   4597   
+4598                   28   4599   
+4599                   28   4600   
+4600                   28   4601   
+4601                   28   4602   
+4602                   28   4603   
+4603                   28   4604   
+4604                   28   4605   
+4606                   28   4607   
+4607                   28   4608   
+4608                   28   4609   
+4609                   28   4610   
+4610                   28   4611   
+4611                   28   4612   
+4612                   28   4613   
+4613                   28   4614   
+4622                   28   4623   
+4624                   28   4625   
+4625                   28   4626   
+4626                   28   4627   
+4627                   28   4628   
+4630                   28   4631   
+4800                   28   4801   
+4807                   28   4808   
+4809                   28   4810   
+4810                   28   4811   
+4872                   28   4873   
+4877                   28   4878   
+4878                   28   4879   
+4890                   28   4891   
+4891                   28   4892   
+4934                   28   4935   
+4937                   28   4938   
+4942                   28   4943   
+4953                   28   4954   
+4956                   28   4957   
+4978                   28   4979   
+4980                   28   4981   
+4982                   28   4983   
+4984                   28   4985   
+4985                   28   4986   
+4986                   28   4987   
+4988                   28   4989   
+4993                   28   4994   
+4995                   28   4996   
+5011                   28   5012   
+5024                   28   5025   
+5028                   28   5029   
+5033                   28   5034   
+
+                                                                                                                                                                               Bug Pattern  
+46                                                                                                                          Documentation enhancement for missing quantum functionalities   
+74                                                                                                                                 Frequency scaling adjustment for quantum instructions.   
+82                                                                                                                                     Error handling for zero-qubit operator application   
+83                                                                                                                               Test addition for zero-qubit operator layout application   
+86                                                                                                                                          Expression handling in quantum circuit tests.   
+104                                                                                                                          Improved verification for quantum probability distributions.   
+105                                                                                                                      Minor wording correction, clarifies quantum state representation   
+152                                                                                                                           Improper operation representation with qubit configurations   
+186                                                                                                                                       Adding prefixes for better qubit identification   
+188                                                                                                                                    Enhancing comparisons and functionality for qubits   
+264                                                                                                                                   Documentation update for quantum algorithm samples.   
+270                                                                                                                         Missing documentation for session management in Azure Quantum   
+271                                                                                                               Code structure and organization improvement for quantum job management.   
+276                                                                                                                                    New project addition in quantum algorithms context   
+279                                                                                                                        New project structure for quantum execution environment setup.   
+281                                                                                                                      Fixes improper qubit state preparation and measurement sequence.   
+289                                                                                                                                      Adding parameters for quantum circuit execution.   
+381                                                                                                                          Mathematical terminology correction for qubit representation   
+435                                                                                                                                       Incorrect sampling method in quantum operations   
+437                                                                                                                                 Data type misalignment in quantum measurement results   
+452                                                                                                                             Documentation enhancement for qutrits and their channels.   
+456                                                                                                                                         Adding missing feature for quantum operations   
+457                                                                                                                                                 Addition of error channel for qutrits   
+459                                                                                                                      Tests for qutrit depolarizing channel implementation correctness   
+473                                                                                                                                      Bug fix for error reporting in quantum circuits.   
+482                                                                                                                       Operator abstraction and primitive creation in quantum context.   
+500                                                                                                                                      Handling of mid-measurements in quantum circuits   
+505                                                                                                                                          Compilation optimization in quantum circuits   
+509                                                                                                                                   Sorting behavior inconsistency in quantum computing   
+515    The changes follow a pattern of improving data handling (fixing data structure discrepancies) and mathematical validation (ensuring proper normalization of quantum probabilities).  
+527                                                                                                                                   Handling decomposition errors in quantum operations   
+528                                                                                                                                         Enhanced error handling in quantum operations   
+531                                                                                                                                Improved transformation logic for fermionic operators.   
+532                                                                                                                                     Addition of test case for Fermi word interactions   
+534                                                                                                                                 Error handling improvement in quantum device support.   
+535                                                                                                                             Handling of initial operations in quantum tape processing   
+539                                                                                                                                Decomposition logic enhancement for quantum operators.   
+541                                                                                                                          Enhanced operation handling in quantum circuit decomposition   
+559                            The update resolves potential compatibility bugs related to TensorFlow and syntax bugs with the CNOT gate implementation in the quantum circuit definition.  
+562                                                                                                                    Fixing circuit gate specification in quantum circuit construction.   
+893                                                                                                                               Performance enhancement for quantum circuit simulation.   
+894                                                                                                                                       Added quantum circuit simulation functionality.   
+896                                                                                                                               Performance enhancement for quantum circuit simulation.   
+1217                                                                                                                             Equality comparison and hashing issues in quantum gates.   
+1352                                                                                                                    Enhancement of resource estimation methods for quantum computing.   
+1355                                                                                                                 Implementing resource estimates for quantum simulations effectively.   
+1362                                                                                                                               Resource estimation enhancement for quantum algorithms   
+1367                                                                                                                                 Cost calculation improvements for quantum algorithms   
+1369                                                                                                                            Enhancing existing quantum simulation resource estimates.   
+1385                                                                                                                                         Missing tests for new quantum functionality.   
+1388                                                                                                                            Verification and consistency testing of quantum integrals   
+1396                                                                                                                       Improved testing for unique integral calculations consistency.   
+1406                                                                                                                      Improved class implementation for quantum instruction handling.   
+1407                                                                                                                            Enhancing program structure analysis for quantum circuits   
+1408                                                                                                                                            Control flow testing in quantum programs.   
+1427                                                                                                                                     Enhancement for batch execution of quantum tasks   
+1458                                                                                                                                 Module access improvement for quantum pulse handling   
+1460                                                                                                                                          Incorrect matrix mapping for quantum gates.   
+1464                                                                                                                                     Dependency update for IBM Quantum runtime access   
+1480                                                                                                                              Enhancement for conditional execution of quantum tests.   
+1494                                                                                                                            Fix for missing layer functionalities in quantum circuits   
+1495                                                                                                                                         Enhancing functionality for qubit operations   
+1500                                                                                                                  Incorrect qubit array declaration causing potential runtime errors.   
+1506                                                                                                                        Incorrect mathematical operation in quantum gate definitions.   
+1510                                                                                                                Documentation integration and enhancement for quantum representation.   
+1532                                                                                                          Integration of quantum processing capabilities through a library inclusion.   
+1544                                                                                                                                 Incorrect initialization of quantum gate parameters.   
+1552                                                                                                                                             Fixing incorrect quantum gate parameters   
+1572                                                                                                                         Implementation of additional quantum gate in execution logic   
+1573                                                                                                                                      Misimplementation of quantum gate functionality   
+1574                                                                                                                               State management optimization for quantum simulations.   
+1619                                                                                                                          Enhancement of quantum operation functionalities and fixes.   
+1621                                                                                                                               Enabling library for quantum computations or features.   
+1623                                                                                                                                                  Off-by-one error in qubit indexing.   
+1624                                                                                                                   Type consistency and efficiency improvement in quantum operations.   
+1643                                                                                                                                        Input validation for quantum gate parameters.   
+1657                                                                                                                                     Parameter correction for quantum gate operations   
+1670                                                                                                                                      Improved quantum circuit decomposition accuracy   
+1671                                                                                                                                           Addition of unitary calculation and fusion   
+1680                                                                                                                              Parameter handling error in quantum gate implementation   
+1682                                                                                                                                     Parameter adjustment for quantum gate operations   
+1683                                                                                                                                       Improper gate order in quantum circuit layers.   
+1688                                                                                                                      Incorrect addressing of classical bits in quantum measurements.   
+1692                                                                                                                                 Code enhancement for correct quantum state handling.   
+1693                                                                                                                      New operators implementation for variational quantum algorithms   
+1697                                                                                                                              Improper initialization of quantum state representation   
+1709                                                                                                                           Improved handling of parallel operations for quantum gates   
+1826                                                                                                                 Fixing incorrect mathematical imports for quantum state preparation.   
+1830                                                                                                                            Functionality addition for quantum molecular calculations   
+1895                                                                                                                             Parameter naming inconsistency in quantum gate functions   
+1904                                                                                                                                               Generalization of quantum circuit size   
+1907                                                                                                                        Missing library import for quantum simulation functionalities   
+1911                                                                                                                              Implementing unit tests for quantum circuit operations.   
+1918                                                                                                                  Improved documentation and reference tracking for quantum research.   
+1926                                                                                                                                       Improper handling of quantum gate connections.   
+1937                                                                                                                              Incorrect mathematical implementation in quantum tests.   
+1938                                                                                                                                    Renaming and restructuring of quantum gates code.   
+1964                                                                                                                                       Improved support for two-qubit gate operations   
+2066                                                                                                                                  Resource management improvement in quantum context.   
+2072                                                                                                                     Dependency addition for Azure Quantum functionality integration.   
+2079                                                                                                                                 Integration of Azure backend for quantum executions.   
+2101                                                                                                                                      Adding support for additional quantum services.   
+2115                                                                                                                             Addition of Azure Quantum backend for circuit execution.   
+2216                                                                                                                                       Improper qubit management leading to confusion   
+2329                                                                                                                                  Feature addition for cloud-based quantum resources.   
+2330                                                                                                                          Support addition for Azure Quantum hardware and simulators.   
+2333                                                                                                                            Interface enhancement for Azure Quantum service inclusion   
+2338                                                                                                                     Improved error handling and simulation of Quantum API responses.   
+2339                                                                                                                         Enhancements to testing coverage for Azure quantum backends.   
+2342                                                                                                                                    Integration tests for Azure Quantum compatibility   
+2346                                                                                                                     Addition of optional quantum dependency in project configuration   
+2626                                                                                                                     Documentation and functionality improvement in quantum software.   
+2631                                                                                                                        Parameter addition for enhanced quantum measurement precision   
+2636                                                                                                                  Enhancing circuit compilation for specific quantum circuitry needs.   
+2657                                                                                                                                   Bug fix for input validation in quantum operations   
+2658                                                                                                                           Code refactoring for clearer quantum operations structure.   
+2659                                                                                                                                 Error handling improvement for quantum engine reset.   
+2661                                                                                                                               Incorrect handling of compile info in quantum routine.   
+2734                                                                                                                                        Quantum program equivalence check improvement   
+2800                                                                                                                                          Removal of unused quantum executor instance   
+2805                                                                                                                                      Addition of new library for quantum processing.   
+2983                                                                                                                                                Addition of a basic quantum operation.  
+2984                                                                                                                     Enhancing test coverage for result comparisons in quantum tests.   
+2992                                                                                                                        Missing repeated testing capabilities for quantum operations.   
+3006                                                                                                                       Quantum sampling implementation for Bayesian network inference   
+3007                                                                                                                         Addition of new algorithm functionality in quantum computing   
+3010                                                                                                                                  Missing test cases for quantum inference scenarios.   
+3014                                                                                                                                          Serialization error in quantum state object   
+3059                                                                                                                     Parameter binding misalignment during quantum circuit execution.   
+3177                                                                                                                              Incomplete handling of orbital symmetries in conversion   
+3179                                                                                                                                    Correction of orbital integral symmetry handling.   
+3187                                                                                                                                    Serialization enhancement for quantum Hamiltonian   
+3192                                                                                                                              Correction of integral symmetry in orbital calculations   
+3208                                                                                                                                 Quantum gate operation clarification and correction.   
+3230                                                                                                                          Gradient mismatch during quantum time evolution computation   
+3292                                                                                                                             Missing quantum gate implementations or functionalities.   
+3319                                                                                                                               Enhancements to quantum state handling and comparison.   
+3325                                                                                                                       Addition of new quantum gate functionalities to implementation.  
+3329                                                                                                                                    Enhancement of functions for quantum computations   
+3385                                                                                                                              State management adjustment for quantum initialization.   
+3452                                                                                                                                 Educational addition for quantum computing tutorial.   
+3465                                                                                                                                       Quantum neural network overfitting mitigation.   
+3508                                                                                                                                    Configuration enhancement for quantum simulations   
+3510                                                                                                                                   Test case update for accurate qubit representation   
+3511                                                                                                                                   Incorrect quantum volume test configuration change   
+3555                                                                                                                            Enhances testing framework for quantum sampling functions   
+3559                                                                                                                                        Adding new quantum gates to backend utilities   
+3562                                                                                                                           Enhancement for gate support in quantum computing methods.   
+3563                                                                                                                    Addition of new quantum gate parameters, corrections to mappings.   
+3564                                                                                                                                   Missing gates implementation in quantum operations   
+3566                                                                                                                                         Addition of missing quantum gate definitions   
+3577                                                                                                                        Documentation improvement on memory limits for quantum states   
+3583                                                                                                                              Improvement to quantum memory estimation functionality.   
+3584                                                                                                                                           Enhancements for multi-qubit gate handling   
+3600                                                                                                                                     Incorrect method call for quantum state creation   
+3624                                                                                                                Feature addition, possible performance improvement for quantum tasks.   
+3670                                                                                                                       Incorrect import statement for quantum modeling functionality.   
+3695                                                                                                                                  Fix incorrect module imports for quantum components.  
+3754                                                                                                                                Amplitude correction in quantum state representation.   
+3774                                                                                                                           Qubit initialization and measurement handling improvement.   
+3780                                                                                                                                 Fixes measurement inaccuracies in quantum operations   
+3789                                                                                                                                        Incorrect quantum gate mapping or application   
+4056                                                                                                                                              Quantum kernel control flow enhancement   
+4062                      Dependency Resolution Bug - The change improves the configuration of dialects needed for successful compilation, particularly regarding quantum code generation.  
+4066                                                                                                                          New dialect implementation for optimization of quantum code   
+4106                                                                                                                                    Inadequate state management in quantum operations   
+4128                                                                                                                        Educational documentation and outline for quantum algorithms.   
+4161                                                                                                                               Enhanced validation for consistency in quantum states.   
+4174                                                                                                                       Commenting out problematic operations in quantum circuit tests   
+4179                                                                                                                                           Bug fixes for quantum gate implementation.   
+4182                                                                                                                                   Commented out failing quantum gates for stability.   
+4193                                                                                                                                             Improved gate handling for QASM parsing.   
+4297                                                                                                                                                 Qubit measurement reset optimization   
+4298                                                                                                                                         Enhanced quantum qubit measurement handling.   
+4299                                                                                                                                 Improvement of qubit reset handling for proper state   
+4308                                                                                                                                               Misnaming of quantum callable function   
+4312                                                                                                                                  Callable name correction in quantum output handling   
+4359                                                                                                                                   Integration of new functions for operator creation   
+4361                                                                                                                            Clarification of operator functionality in quantum context  
+4368                                                                                                                                 Enhances validation of quantum simulation parameters   
+4389                                                                                                                                    Improves control flow in quantum gate compilation   
+4422                                                                                                                          Inefficient data handling in quantum circuit transformation   
+4426                                                                                                                            Handling layout errors in quantum circuit transformations   
+4428                                                                                                                                  Nomenclature standardization in quantum operations.   
+4429                                                                                                                                                Incorrect quantum gate representation   
+4430                                                                                                                         Correction of quantum gate implementation and output method.   
+4546                                                                                                        Critical update for ecdh-curve specification to enable post-quantum security.   
+4547                                                                                                                                             Ensuring use of post-quantum algorithms.   
+4562                                                                                                                                Mode selection and quantum engine construction error.   
+4589                                                                                                                      Refactoring to correct interface mapping for quantum operation.   
+4592                                                                                                                                            Naming inconsistency in quantum operation   
+4595                                                                                                                         Implementation of quantum gate decomposition for correctness   
+4596                                                                                                                                Implementation of missing quantum gate functionality.   
+4598                                                                                                                                              Missing phase gate operation for qubits   
+4599                                                                                                                                      Missing SAdj operation in quantum gate library.   
+4600                                                                                                                                    Implementation of missing quantum gate operation.   
+4601                                                                                                                                       Addition of missing quantum gate functionality   
+4602                                                                                                                                       Implementation of a quantum gate functionality   
+4603                                                                                                                                   Missing implementation of a quantum gate function.   
+4604                                                                                                                                        Implementation of a missing quantum operation   
+4606                                                                                                                                          Addition of new quantum gate functionality.   
+4607                                                                                                                                          Implementation of missing quantum operation   
+4608                                                                                                                                   Implementation of missing quantum gate operations.   
+4609                                                                                                                                         Addition of quantum operation functionality.   
+4610                                                                                                                                         Addition of a missing quantum gate operation   
+4611                                                                                                                            Improvement of quantum gate definition and control logic.   
+4612                                                                                                                               Addition of quantum operation for gate implementation.   
+4613                                                                                                                                       Adding a new quantum operation for simulations   
+4622                                                                                                                                  Adding missing quantum gate decompositions in code.   
+4624                                                                                                                  Refactoring intrinsic quantum operations for enhanced functionality   
+4625                                                                                                                     Addition of quantum gate decompositions, enhancing capabilities.   
+4626                                                                                                                                     Missing quantum gate decompositions in codebase.   
+4627                                                                                                                                    Unit testing enhancements for quantum operations.   
+4630                                                                                                                                   Quantum project setup and dependency configuration   
+4800                                                                                                                            Incorrect operator mapping for fermionic systems handling   
+4807                                                                                                                                           New operator integration in Qiskit Nature.   
+4809                                                                                                                              Missing representation for Majorana operators in Qiskit   
+4810                                                                                                                                             New operator class for Majorana fermions   
+4872                                                                                                                            Fixing operator comparison errors in quantum computations   
+4877                                                                                                                              Enhancements to ansatz capabilities in quantum circuits   
+4878                                                                                                                                          Missing edge case in quantum circuit tests.   
+4890                                                                                                                                Code correction for proper quantum state projections.   
+4891                                                                                                                                Fixing output results for quantum state measurements.   
+4934                                                                                                                                   Improper initialization of quantum circuit states.   
+4937                                                                                                                                      Incorrect matrix retrieval in quantum circuits.   
+4942                                                                                                                                     Test for correct handling of integer qubit names   
+4953                                                                                                                                      Incorrect state slice in gate application logic   
+4956                                                                                                   Improper matrix exponentiation leading to incorrect quantum state transformations.   
+4978                                                                                                                             Enhances test coverage for quantum circuit functionality   
+4980                                                                                                                                      Adding unit test for quantum gate set creation.   
+4982                                                                                                                          Validation and correctness of quantum gate implementations.   
+4984                                                                                                                               Addition of unit tests for quantum circuit properties.   
+4985                                                                                                                                  Optimization of gate operations in quantum circuits   
+4986                                                                                                                                              Unit testing for quantum gate accuracy.   
+4988                                                                                                                                  Adding unit tests for quantum measurement functions   
+4993                                                                                                                        Testing quantum Hamiltonians for correctness and consistency.   
+4995                    The change likely falls under the category of utility enhancements and validation, focusing on circuit optimization and correct quantum operation implementations.  
+5011                                                                                                                                Fixing incorrect qubit set used for hardware mapping.   
+5024                                                                                                                                 Improves qubit interaction sequence generation logic   
+5028                                                                                                               Circuit optimization and efficiency improvement in quantum algorithms.   
+5033                                                                                                                                                 Input validation for qubit retrieval   
+     Quantum Bug Cluster  Index  \
+42                    29     43   
+153                   29    154   
+154                   29    155   
+155                   29    156   
+156                   29    157   
+
+                                                                 Bug Pattern  
+42    Implementation of Restricted/Unrestricted Kohn-Sham DFT calculations.   
+153                              Replacement of a less efficient gauge type   
+154              Extended test coverage for gauge transformation scenarios.   
+155                      Improves gauge selection and transformation logic.   
+156                    Test case addition for the SqrtCZ gauge transformer.   
+      Quantum Bug Cluster  Index  \
+4799                   30   4800   
+
+                                                  Bug Pattern  
+4799   Incorrect tuple return statement in encoding function   
+      Quantum Bug Cluster  Index  \
+1509                   31   1510   
+4192                   31   4193   
+4542                   31   4543   
+4549                   31   4550   
+4550                   31   4551   
+4551                   31   4552   
+4552                   31   4553   
+4553                   31   4554   
+4921                   31   4922   
+4923                   31   4924   
+
+                                                                  Bug Pattern  
+1509                         Documentation enhancement for OpenQASM support.   
+4192                 Syntax compatibility issue with OpenQASM 3 requirements   
+4542              Documentation update for cryptographic algorithm inclusion   
+4549                   Algorithm negotiation for quantum-secure ciphersuites   
+4550         Enhancement of security for negotiated key exchange algorithms.   
+4551                     Misconfiguration of key exchange and cipher suites.   
+4552         Clarification of cryptographic protocol requirements for safety   
+4553   Ensures consistent key exchange algorithm specification for security.   
+4921         Update cryptographic exclusions for enhanced security measures.   
+4923            Exclusion of potentially vulnerable cryptographic algorithms   
+      Quantum Bug Cluster  Index  \
+162                    32    163   
+167                    32    168   
+168                    32    169   
+599                    32    600   
+601                    32    602   
+1511                   32   1512   
+1523                   32   1524   
+1557                   32   1558   
+1560                   32   1561   
+1636                   32   1637   
+1678                   32   1679   
+1939                   32   1940   
+1940                   32   1941   
+2121                   32   2122   
+2341                   32   2342   
+3221                   32   3222   
+3535                   32   3536   
+3560                   32   3561   
+3561                   32   3562   
+3565                   32   3566   
+3567                   32   3568   
+4171                   32   4172   
+4177                   32   4178   
+4189                   32   4190   
+4354                   32   4355   
+4362                   32   4363   
+4419                   32   4420   
+4431                   32   4432   
+4594                   32   4595   
+4597                   32   4598   
+4605                   32   4606   
+4614                   32   4615   
+4628                   32   4629   
+4629                   32   4630   
+4631                   32   4632   
+4979                   32   4980   
+5031                   32   5032   
+5035                   32   5036   
+
+                                                                         Bug Pattern  
+162                          Incorrect gate duration assignment for specific gates.   
+167                                    Unused gate optimization and simplification.   
+168                                  Incorrect expectation of gate outputs in tests   
+599                     Class hierarchy adjustment, ensuring correct gate behavior.   
+601                                 Change in gate class hierarchy for flexibility.   
+1511            Ensuring accurate floating-point representation for gate modifiers.   
+1523                    Transition from direct inclusion to modular gate definition   
+1557                          Addition of missing gate type handling in code logic.   
+1560                                           Missing gate type in node processing   
+1636                                  Missing support for Ansatz gates in execution   
+1678                                Enhanced angle matching for gate decomposition.   
+1939                           Clarification of gate effects and their implications   
+1940                                   Unneeded promise related to gate net effects   
+2121                   Insufficient verification of gate operational compatibility.   
+2341                         Enhancement for backend compatibility and gate support   
+3221                                       Documentation correction for gate naming   
+3535                                     Optimization for Pauli gate error handling   
+3560                     Enhancement of simulator capabilities for gate operations.   
+3561                              Gate addition to improve simulator functionality.   
+3565                           Updates gate set consistency, corrects gate mappings   
+3567                                  Adding new gate functionality to the library.   
+4171                                   Feature enhancement with gate implementation   
+4177                          Type-checking adjustment for gate internal parameters   
+4189                    Compatibility enhancement for OpenQASM gate specifications.   
+4354                                    Bug fix for gate control logic and wrapping   
+4362                                           Parameter clarity in gate definition   
+4419                    Replacement of identity gate with valid circuit instruction   
+4431                            Terminology standardization in gate representation.   
+4594                                  Addition of intrinsic CNOT gate functionality   
+4597                              Implementation of an Uncontrolled Y Rotation Gate   
+4605                                 Replacement of Ising gates with rotation gates   
+4614                               Addition of missing gate operations and controls   
+4628                           Addition of rotation gates to enhance functionality.   
+4629            Code enhancement for gate decomposition and compilation efficiency.   
+4631                                Test implementation for gate operation accuracy   
+4979                              Code refactoring for clearer gate set management.   
+5031   Type compatibility improvement, enhances future-proofing of gate operations.   
+5035                        Improper class inheritance affecting gate functionality   
+      Quantum Bug Cluster  Index  \
+484                    33    485   
+486                    33    487   
+1287                   33   1288   
+
+                                                 Bug Pattern  
+484       Handling abstract functions in adjoint operations   
+486    Fixed handling of controlled ops for abstract types.   
+1287    Code simplification and abstract class enforcement.   
+     Quantum Bug Cluster  Index  \
+478                   34    479   
+483                   34    484   
+491                   34    492   
+492                   34    493   
+507                   34    508   
+508                   34    509   
+
+                                                    Bug Pattern  
+478        Improvement in operator handling for JAX synthesis.   
+483                   Enhancing operator handling in PennyLane   
+491            Integration test for operator capture with JAX.   
+492   Compatibility issue with JAX and PennyLane interactions.   
+507    Resolves JAX compilation issues with probability calls.   
+508                      New test integration for JAX support.   
+      Quantum Bug Cluster  Index  \
+98                     35     99   
+472                    35    473   
+529                    35    530   
+533                    35    534   
+546                    35    547   
+547                    35    548   
+550                    35    551   
+2993                   35   2994   
+4480                   35   4481   
+
+                                                                 Bug Pattern  
+98                     Testing enhancement for layout permutation handling.   
+472                     Fixing insertion of non-commuting observables error   
+529                    Infinite recursion handling with custom error types.   
+533                          Non-commuting measurement handling improvement   
+546    Non-commuting observables in finite difference gradient calculation.   
+547                        Inadequate testing for non-commuting observables   
+550      Ensuring correct behavior with non-commuting observable rotations.   
+2993                            Infinite loop due to lack of exit condition   
+4480                Enhanced permutation matrix application and validation.   
+      Quantum Bug Cluster  Index  \
+2451                   36   2452   
+3249                   36   3250   
+3768                   36   3769   
+4208                   36   4209   
+4485                   36   4486   
+4893                   36   4894   
+
+                                                   Bug Pattern  
+2451                 Output formatting bug, condition not met   
+3249               Output formatting improvement for clarity.   
+3768      Whitespace or formatting update, no logical change.   
+4208   Output formatting issue in Jupyter Notebook rendering.   
+4485                Output formatting and logging enhancement   
+4893        Adding output for ket-bra operations for clarity.   
+      Quantum Bug Cluster  Index  \
+1350                   37   1351   
+1353                   37   1354   
+1358                   37   1359   
+1368                   37   1369   
+1370                   37   1371   
+1372                   37   1373   
+1373                   37   1374   
+1390                   37   1391   
+4583                   37   4584   
+4584                   37   4585   
+
+                                                              Bug Pattern  
+1350           Resource estimation algorithm refinement and enhancement.   
+1353              Unit test for resource estimates function correctness.   
+1358            Unit test addition for resource estimation functionality   
+1368             Testing and validation of resource estimation functions   
+1370               Unit test addition for resource estimates validation.   
+1372   Enhanced resource estimation calculation without prior framework.   
+1373               Adding unit tests for resource calculation functions.   
+1390            Additional unit tests for resource estimation functions.   
+4583   New feature implementation for resource estimation functionality.   
+4584        Resource estimation code enhancement, caching implementation

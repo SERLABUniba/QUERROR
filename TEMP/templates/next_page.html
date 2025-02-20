@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Page</title>
+</head>
+<body>
+    <h1>Next Page</h1>
+    <p>You are viewing page {{ page }}</p>
+    <!-- You can add more HTML content as needed -->
+    <form action="{{ url_for('index', page=page) }}" method="get">
+        <input type="hidden" name="page" value="{{ page }}">
+        <button type="submit">Return to Main Application: Page {{ page }}</button>
+    </form>
+</body>
+</html>

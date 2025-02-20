@@ -1,0 +1,315 @@
+ID,Pattern,Vulnerabilities,Pattern
+46,Documentation enhancement for missing quantum functionalities,N/A,Documentation
+80,Documentation formatting improvement,N/A,Documentation
+109,Documentation enhancement for accuracy and clarity,Clarifies misconceptions about QRNG reliability on simulators.,Documentation
+110,Documentation clarification or version update,No vulnerabilities detected or fixed,Documentation
+264,Documentation update for quantum algorithm samples,No vulnerabilities directly addressed.,Documentation
+270,Missing documentation for session management in Azure Quantum,None identified; focuses on usability improvement.,Documentation
+274,Documentation enhancement for example resources,Improves access to learning resources.,Documentation
+275,Documentation improvement and educational resource enhancement,Improves user comprehension of quantum algorithms.,Documentation
+278,Documentation and example implementation clarification,Enhancements for better usage and understanding of quantum inner product operations.,Documentation
+288,Documentation enhancement for greater accuracy and clarity,Clarifies parameter specification for resource estimation jobs.,Documentation
+301,Correction of mathematical symbols in documentation,None,Documentation
+392,Documentation clarification regarding operation independence,None,Documentation
+400,Documentation update for accuracy and resource reliability,Fixes broken links leading to outdated resources,Documentation
+401,"Documentation improvement, clarifying assumptions on state preparation",Assumes uniform superposition state for optimal iterations,Documentation
+452,Documentation enhancement for qutrits and their channels,Enhances understanding of qutrit noise modeling and effects.,Documentation
+1505,Documentation improvement and specification clarification,Inadequate specification potentially leading to misinterpretation.,Documentation
+1507,Clarification of file inclusion in documentation,Removes potential misunderstanding in gate definitions inclusion.,Documentation
+1509,Documentation enhancement for OpenQASM support,"Enhances Sphinx documentation capabilities, ensuring accurate quantum info.",Documentation
+1510,Documentation integration and enhancement for quantum representation,Improves quantum documentation clarity and usability.,Documentation
+1513,Documentation improvement and include update,Enhances clarity regarding QASM versioning and standard libraries.,Documentation
+1514,Documentation enhancement and clarity improvement,Improves user understanding of gate functionality and usage.,Documentation
+1515,Documentation enhancement for clarity and completeness,Improves clarity of language features.,Documentation
+1917,Documentation improvement for better user guidance,Improved understanding of quantum simulations via tensor networks.,Documentation
+1918,Improved documentation and reference tracking for quantum research,Incomplete or outdated references causing misinformation.,Documentation
+2057,"Documentation bug, clarity improvement",Improves understanding of gate set requirements.,Documentation
+2058,Documentation correction,Improves code clarity and documentation quality.,Documentation
+2626,Documentation change to reflect improvement in quantum software,Enhancements in quantum program execution and compilation behavior.,Documentation
+2633,Documentation improvement for clarity and accuracy,Improved understanding of quantum systems documentation,Documentation
+2675,Refactoring for consistency in documentation display,"No vulnerabilities addressed, improves documentation clarity.",Documentation
+2842,Visual enhancement or documentation improvement,Improves understanding of quantum concepts via graphics.,Documentation
+3016,Documentation update and functionality clarification,Improper understanding of quantum kernel state change.,Documentation
+3036,Documentation update to reflect new resources,Fixes misleading reference links in migration documents,Documentation
+3221,Documentation correction for gate naming,Ensures correct gate operation in quantum algorithms,Documentation
+3448,Documentation clarification and reference correction,Improves understanding of quantum class structure,Documentation
+3453,Documentation and functionality enhancement for mid-circuit measurements,Incorrect mid-circuit measurement statistics due to improper processing.,Documentation
+3457,Addition of documentation for educational resources,N/A,Documentation
+3458,Documentation improvement and educational content addition,N/A,Documentation
+3464,Documentation addition for educational content enhancement,"No inherent vulnerabilities addressed, serves educational purpose",Documentation
+3468,Documentation addition for clarity and organization,No vulnerabilities resolved; it enhances awareness and promotes learning.  This change does not introduce or fix vulnerabilities but provides educational content on quantum methods.,Documentation
+3577,Documentation improvement on memory limits for quantum states,Improves usability and prevents misconfiguration.,Documentation
+3621,Documentation enhancement or literature addition,Improper handling of memory limit results in runtime errors,Documentation
+3622,Documentation addition for missing example,None identified. Referencing gaps in literature assessments during quantum circuit learning.,Documentation
+4128,Educational documentation and outline for quantum algorithms,"No critical vulnerabilities resolved, just added information.",Documentation
+4399,Documentation improvement for usability enhancement,N/A,Documentation
+4402,Documentation enhancement and feature addition,Provides clearer access to quantum error mitigation methods.,Documentation
+4417,Documentation clarity improvement for consistent platform usage,"No specific vulnerabilities resolved, just enhances functionality.",Documentation
+4443,"Documentation update, name clarification",Provides clarity on circuit execution within different frameworks.,Documentation
+4444,Documentation inconsistency about class usage,Improves clarity in usage documentation,Documentation
+4448,Extension documentation links update in configuration file,Potential confusion in using circuit components,Documentation
+4449,Documentation clarity enhancement,No known vulnerabilities directly addressed.,Documentation
+4450,Documentation update for class references in code,No direct vulnerabilities addressed,Documentation
+4452,Documentation inconsistency fix,Addresses documentation accuracy for quantum circuits,Documentation
+4454,Documentation update for clear class reference usage,Improves accuracy of technical documentation references,Documentation
+4461,Terminology inconsistency correction in documentation,Clarified class references enhance code readability and usability.,Documentation
+3476,Documentation and functionality clarification,Improves understanding of quantum states in documentation.,Documentation
+4542,Documentation update for cryptographic algorithm inclusion,No direct vulnerabilities addressed; facilitates quantum-resilient signatures.,Documentation
+4882,"Documentation improvement, clarification of operator flow usage",None,Documentation
+4910,Code cleanup and documentation enhancement,No direct vulnerabilities addressed,Documentation
+4946,Documentation removal for deprecated feature,"No known vulnerabilities addressed, just removal of potentially misleading information.",Documentation
+1466,API migration for backend access,Replacing deprecated methods ensures continued access to quantum backends.,API
+1468,API change for backend provider access.,Removes dependency on outdated IBMQ library components.,API
+1559,API enhancement for additional chip configurations,Enhances compatibility with various quantum chip types,API
+2338,Improved error handling and simulation of Quantum API responses.,Resolves reliability in Azure Quantum transaction executions.,API
+3323,Enhanced API usability and method clarity improvement.,Improved clarity in code structure reduces cognitive burden.,API
+4406,API update for improved functionality and support.,Resolves potential compatibility and functionality issues in execution.,API
+4839,API deprecation and migration to new best practices.,Improves execution efficiency by reducing overhead in quantum jobs.,API
+4844,Method signature mismatch in Qiskit API change,Resolves runtime errors in quantum circuit parameter binding.,API
+81,Input validation to prevent invalid state operations.,Prevents operation on non-existent qubits.,Input
+92,Input validation and error handling enhancement,Prevents invalid index access in quantum operations.,Input
+93,Input validation for layout methods in quantum ops.,Prevents potential misconfiguration in quantum circuit layouts.,Input
+94,Input validation for layout indices in apply_layout function,Prevents unexpected behavior from invalid indices,Input
+521,Fixing measurement input handling and validation,Improper measurement handling could lead to incorrect circuit behavior.,Input
+530,Function call correction for input handling,Incorrect handling of FermiSentence input,Input
+538,Exception handling for batched input errors,Prevents crashes from unsupported input types during operations,Input
+1546,Input validation and functionality enhancement,Prevents incorrect quantum measurements and execution failures.,Input
+1577,Input validation for control and target qubits,Prevents logical errors in quantum gate applications.,Input
+1643,Input validation for quantum gate parameters.,Prevents usage of the same qubit for control and target.,Input
+1666,Input validation and error handling improvements,Resolves measurement parameter errors and improves input integrity.,Input
+1831,New test input for MP2 energy correlation.,This change could enhance robustness of quantum energy calculations.,Input
+1932,Exception handling and input validation improvement.,Prevent invalid calculations on quantum states.,Input
+2644,Improved input validation and mode handling in TDM programs.,Potential errors in TDM program execution using incorrect parameters.,Input
+2657,Bug fix for input validation in quantum operations,Invalid gate parameters could lead to incorrect quantum outcomes,Input
+3058,Incorrect input/weight binding order during execution.,Fixes inconsistent binding leading to erroneous outcomes.,Input
+3224,Clarification of input parameter constraints,Misuse of unitary operations due to incorrect integer assumptions,Input
+4481,Input validation and robustness improvement.,Prevents qubit ID overlaps and range violations.,Input
+4778,Improves error handling and adds input validation for measures.,Prevents erroneous qubit index usage.,Input
+4784,Invalid input handling in bosonic mapping,Ensures only valid bosonic operators are processed,Input
+5033,Input validation for qubit retrieval,Ensures qubit metadata exists before processing,Input
+110,Documentation clarification or version update,No vulnerabilities detected or fixed,Version
+148,Version compatibility adjustment for qiskit-aer dependencies.,This change may prevent unexpected behaviors in quantum simulations.,Version
+193,SDK version update for bug fixes or features.,Potential issues related to SDK compatibility resolved.,Version
+194,SDK version upgrade for improved performance or bug fixes.,"Updates library for enhancements, stability, or vulnerability patches.",Version
+195,SDK version update with potential bug fixes and improvements.,Addresses issues that may affect quantum circuit execution or performance.,Version
+196,Version upgrade for enhanced functionality and compatibility.,Outdated dependencies that may cause compatibility or performance issues.,Version
+197,SDK version upgrade for stability and performance.,"No known vulnerabilities identified, but could enhance security.",Version
+198,Version upgrade for performance and stability improvements.,"Improves stability and performance, addressing previous functionality issues.",Version
+199,SDK version update for bug fixes and enhancements,Updates may resolve issues with performance stability or compatibility.,Version
+200,SDK version update and dependency resolution.,Improves stability and functionality of quantum algorithms.,Version
+201,SDK version upgrade for stability and performance improvements,Potential incompatibility or unoptimized performance issues in quantum applications.,Version
+202,SDK version update for stability improvements,Updates might resolve compatibility or functionality issues in quantum operations.,Version
+203,"SDK version upgrade, addressing existing bugs or enhancing performance.",Updates improve compatibility and performance; no known vulnerabilities fixed.,Version
+205,SDK version upgrade for bug fixes.,Fixes potential quantum computation inaccuracies or inefficiencies.,Version
+208,Dependency version update for improved stability or features.,Potential bugs in the previous SDK version.,Version
+209,SDK version upgrade for enhanced performance or fixes.,Potential compatibility issues with older SDK versions.,Version
+210,SDK version upgrade for improvements or bug fixes.,Potentially resolves compatibility or stability vulnerabilities within quantum operations.,Version
+211,SDK version update for performance or feature improvements.,Potential stability or performance issues with the previous SDK version.,Version
+212,SDK version update for compatibility and fixes,Updates may mitigate potential quantum algorithm execution issues.,Version
+215,SDK version upgrade for stability and enhancements,May address stability issues in quantum operations.,Version
+216,"SDK version upgrade, potential bug fixes and improvements",Updates may resolve incompatibilities or enhance security.,Version
+217,SDK version upgrade for enhancements and bug fixes.,Outdated SDK may lead to compatibility and performance issues.,Version
+218,Version upgrade for bug fixes or enhancements.,Resolves compatibility issues or potential exploits in previous versions.,Version
+220,Package version update for compatibility,Fixes potential instability in quantum computing tasks,Version
+221,Library version update for enhanced performance,Improves stability and possibly addresses known bugs.,Version
+223,Dependency version upgrade for bug fixes,Addresses compatibility issues with newer Quantum SDK features,Version
+224,Version update for improved stability and features.,Non-specific compatibility and stability issues.,Version
+226,Package version upgrade for bug fixes and improvements,Updates improve stability and performance of quantum algorithms.,Version
+227,SDK and package version upgrade for improvements.,Updates improve stability and functionality of quantum simulations.,Version
+228,Dependency update for library versions,Resolves potential bugs from prior versions.,Version
+230,Version update for stability and new features,Possible bugs in previous SDK version,Version
+231,SDK version update for improved functionality or bug fixes.,Updates may fix integration issues or performance limitations.,Version
+232,SDK version upgrade for bug fixes and performance enhancement,This update resolves potential quantum simulation inaccuracies or inefficiencies.,Version
+234,"SDK version upgrade, potentially resolving regressions or issues.",Updates may close gaps or bugs in quantum operations.,Version
+237,"Version upgrade, likely resolves compatibility and functionality issues",Potential bugs in quantum simulations or computations,Version
+239,SDK version upgrade for bug fixes and features.,Potential unresolved issues in previous SDK versions.,Version
+241,Package version upgrade for bug fixes or enhancements,Potential bugs in older package version resolved.,Version
+243,Dependency version update for stability and performance.,Lack of compatibility and functionality improvements prior to update.,Version
+244,Version update for improved stability and performance.,Enhances compatibility with quantum libraries and tools.,Version
+245,Dependency version update for better performance or fixes.,"No specific vulnerabilities found, just improved version.",Version
+246,dependency version update for bug fixes,Updates to mitigate performance or stability issues,Version
+248,SDK version upgrade and potential bug fixes,Potentially resolves compatibility and performance issues in quantum operations,Version
+249,Package version update for bug fixes and improvements.,Potential performance and stability issues in quantum computations.,Version
+251,SDK version upgrade for better support and features.,Outdated SDK could introduce compatibility issues in the project.,Version
+252,Dependency version upgrade for enhancements and fixes.,"Improves reliability and performance, potentially addressing stability issues.",Version
+253,Package version update for bug fixes and enhancements.,"Ensures compatibility and resolves potential bugs in the simulator.  Update resolves issues related to previous package flaws, improving security and stability.",Version
+254,SDK version update to resolve potential issues.,Updates may fix compatibility or stability issues.,Version
+255,SDK version update for better stability and performance.,No known vulnerabilities addressed.,Version
+256,SDK version update for bug fixes or enhancements.,Improves stability and functionality of quantum projects.,Version
+257,SDK version upgrade to enhance performance or fix bugs.,Updates may fix stability or feature issues in quantum simulations.,Version
+258,SDK version update for enhancements or bug fixes.,Potential minor bugs or compatibility issues with previous SDK.,Version
+260,SDK version update for bug fixes and improvements.,Updates address potential defects in quantum state manipulations.,Version
+640,Dependency version rectification for qsim library.,The change mitigates compatibility issues between the specified versions.,Version
+818,Version upgrade and additional dependency integration,The change may mitigate compatibility issues with newer quantum libraries.,Version
+1205,Version upgrade for functionality or security improvements,Potential issues with quantum circuit execution or functionality,Version
+1206,Library version update to improve functionality.,Updates to fix performance issues or exploits in quantum algorithms.,Version
+1209,"Library version upgrade, likely resolves bugs or security issues",Potential vulnerabilities in quantum algorithms or functionalities,Version
+1210,Upgrade version to resolve dependency conflict,Potential instability from outdated quantum library version.,Version
+1445,Matrix version update and new example tests added.,"Enhances compatibility, ensuring stability with new Python updates.",Version
+1521,Version update for enhanced functionality or fix.,Non-specific vulnerability; likely standard bug resolution.,Version
+2995,Dependency version update for bug fix,"Reduces chances of stability issues, potential bugs.",Version
+2996,"Dependency version update, feature enhancement, or minor bug fix.",Potential issues in quantum simulation performance or accuracy.,Version
+2999,Version upgrade for library dependencies,Potential incompatibilities introduced by outdated dependencies,Version
+3210,Version update for libraries and dependencies.,Potential for improved performance and stability.,Version
+3211,SDK version upgrade for stability or feature enhancement.,Improved functionality or performance in quantum applications.,Version
+3212,SDK version upgrade for improved functionality,Addresses potential compatibility or performance issues,Version
+3214,SDK version upgrade for stability or compatibility fixes,Potential bugs related to quantum state management or performance,Version
+3215,Version upgrade for feature enhancements or bug fixes,Potential for unexpected behavior in older SDK versions.,Version
+3216,SDK version update for enhancements or fixes,Resolves potential incompatibilities and performance issues in quantum tests.,Version
+3218,SDK version update for compatibility improvements.,"Enhances features, possibly fixing existing issues in the previous version.",Version
+3220,SDK version update for improved functionality and fixes.,Addresses known bugs in the quantum SDK version.,Version
+3507,Dependency version update for bug fixes.,This update ensures compatibility and stability in quantum computations.,Version
+3590,Compatibility adjustment for version differences,Fixes potential backend initialization failure issues.,Version
+4409,Library Version Update or Functionality Improvement,Upgrade compatibility and functionality.,Version
+4412,Update dependency version and backend change,Improves consistency against detrimental noise in simulations.,Version
+148,Version compatibility adjustment for qiskit-aer dependencies.,This change may prevent unexpected behaviors in quantum simulations.,Dependency
+200,SDK version update and dependency resolution.,Improves stability and functionality of quantum algorithms.,Dependency
+204,Dependency update for stability and compatibility.,Ensures proper functioning of quantum algorithms.,Dependency
+208,Dependency version update for improved stability or features.,Potential bugs in the previous SDK version.,Dependency
+223,Dependency version upgrade for bug fixes,Addresses compatibility issues with newer Quantum SDK features,Dependency
+225,Dependency update for increased stability and performance.,No known vulnerabilities addressed explicitly.,Dependency
+228,Dependency update for library versions,Resolves potential bugs from prior versions.,Dependency
+235,Dependency update for enhanced performance and stability,Updates potential vulnerabilities in quantum operations and existing bugs.,Dependency
+242,Dependency update for bug fixes and improvements.,May resolve issues related to functionality or stability in quantum operations.,Dependency
+243,Dependency version update for stability and performance.,Lack of compatibility and functionality improvements prior to update.,Dependency
+245,Dependency version update for better performance or fixes.,"No specific vulnerabilities found, just improved version.",Dependency
+246,dependency version update for bug fixes,Updates to mitigate performance or stability issues,Dependency
+252,Dependency version upgrade for enhancements and fixes.,"Improves reliability and performance, potentially addressing stability issues.",Dependency
+262,Dependency upgrade for improved SDK features and bug fixes.,Resolves potential compatibility and stability issues in quantum performance.,Dependency
+319,Dependency management for qiskit-tutorials.,Prevents empty tutorial outputs with missing dependencies.,Dependency
+640,Dependency version rectification for qsim library.,The change mitigates compatibility issues between the specified versions.,Dependency
+818,Version upgrade and additional dependency integration,The change may mitigate compatibility issues with newer quantum libraries.,Dependency
+1207,Dependency upgrade for bug fixes or enhancements.,Potential issues in quantum circuit implementations or API compatibility.,Dependency
+1208,Dependency update for performance and security improvements.,Potentially addresses performance inefficiencies in quantum algorithms.,Dependency
+1210,Upgrade version to resolve dependency conflict,Potential instability from outdated quantum library version.,Dependency
+1356,Resource management integration for estimates and dependencies.,Improved handling of available resources without unnecessary imports.,Dependency
+1371,Conditional imports for dependency management in resource estimation,Reduces risks of ImportError due to missing dependencies,Dependency
+1461,Adding new layer dependencies for extensibility,Extends operational capabilities in quantum circuits,Dependency
+1464,Dependency update for IBM Quantum runtime access,"Addresses library reference to obsolete package, improving compatibility.",Dependency
+1913,Adding new dependency to CI workflow.,Potential compatibility issues or missing functionality.,Dependency
+1915,Dependency registration for mathematical operations improvement.,"Not applicable, as this change does not directly resolve vulnerabilities.",Dependency
+2072,Dependency addition for Azure Quantum functionality integration.,Ensures availability of Azure Quantum resources and features.,Dependency
+2346,Addition of optional quantum dependency in project configuration,Incorporating Azure Quantum resources into existing codebase,Dependency
+2785,Conditional import to manage dependencies better.,Prevents ImportError if quantum dependencies are missing.,Dependency
+2995,Dependency version update for bug fix,"Reduces chances of stability issues, potential bugs.",Dependency
+2996,"Dependency version update, feature enhancement, or minor bug fix.",Potential issues in quantum simulation performance or accuracy.,Dependency
+2999,Version upgrade for library dependencies,Potential incompatibilities introduced by outdated dependencies,Dependency
+3018,Fixes to enhance job management and dependency stabilization.,Eliminates potential submission errors with backend overload.,Dependency
+3020,Dependency adjustment for improved execution,Potential error due to missing imports.,Dependency
+3028,Dependency adjustment for better module compatibility.,"Improves module specificity, reducing potential loading conflicts.",Dependency
+3210,Version update for libraries and dependencies.,Potential for improved performance and stability.,Dependency
+3213,Dependency update for improved features or bug fixes,Updates may resolve compatibility or functional issues within the quantum framework.,Dependency
+3217,Dependency update for enhanced functionality and stability.,Updated dependencies may fix bugs or performance issues.,Dependency
+3219,Dependency update for bug fixes and improvements.,Resolves bugs associated with outdated quantum libraries.,Dependency
+3507,Dependency version update for bug fixes.,This update ensures compatibility and stability in quantum computations.,Dependency
+3528,Dependency management and backend compatibility issue,Resolves qubit handling and backend configuration problems,Dependency
+3676,Code structure and dependency correction,Improves circuit identity mapping and accuracy,Dependency
+4062,"Dependency Resolution Bug - The change improves the configuration of dialects needed for successful compilation, particularly regarding quantum code generation.","This change resolves compatibility vulnerabilities in the integration of CUDA quantum programming features within the QIR conversion process, ensuring that relevant features and optimizations can be utilized effectively without runtime errors or compilation failures.",Dependency
+4385,Removal of obsolete test cases and dependencies,Removes test failures due to missing Phoenics installation,Dependency
+4397,Improved dependency management and method discovery,Compatibility and coherence issues with error mitigation techniques resolved.,Dependency
+4405,Dependency upgrade for improved integration and reliability,Outdated library versions may introduce bugs or inefficiencies,Dependency
+4412,Update dependency version and backend change,Improves consistency against detrimental noise in simulations.,Dependency
+4473,Dependency update for improved GPU support.,Addresses potential incompatibility with GPU processes.,Dependency
+4630,Quantum project setup and dependency configuration,Addresses potential integration issues and improves project organization,Dependency
+4975,Dependency addition for missing features or functionalities.,Missing dependency could lead to incorrect behavior in quantum algorithms.,Dependency
+4991,Dependency management to ensure proper library access for computations.,Ensures proper environment for quantum algorithm execution.,Dependency
+4998,Dependency addition for enhanced model support.,Enhanced functionality may improve computational efficiency and accuracy.,Dependency
+5032,Dependency upgrade due to library improvements and feature addition.,Compatibility issues with prior versions of Cirq libraries.,Dependency
+162,Incorrect gate duration assignment for specific gates.,Potential for incorrect quantum state manipulation.,Gate
+167,Unused gate optimization and simplification.,"Simplifies gate set, improving circuit efficiency.",Gate
+168,Incorrect expectation of gate outputs in tests,Fixes supervisory misunderstanding of quantum gate functions,Gate
+559,The update resolves potential compatibility bugs related to TensorFlow and syntax bugs with the CNOT gate implementation in the quantum circuit definition.,This change does not specifically target classical or quantum vulnerabilities like side-channel attacks or implementation mistakes leading to computational errors but rather enhances performance and compatibility.,Gate
+562,Fixing circuit gate specification in quantum circuit construction.,Resolves quantum gate connectivity confusion.,Gate
+599,"Class hierarchy adjustment, ensuring correct gate behavior.",Improves gate type integrity and functionality.,Gate
+601,Change in gate class hierarchy for flexibility.,No specific vulnerabilities addressed.,Gate
+1217,Equality comparison and hashing issues in quantum gates.,Possible incorrect handling of gate instances in computations.,Gate
+1460,Incorrect matrix mapping for quantum gates.,Fixes potential quantum gate inaccuracies and ensures correct operations.,Gate
+1506,Incorrect mathematical operation in quantum gate definitions.,Fixes potential inaccuracies in quantum gate simulations.,Gate
+1511,Ensuring accurate floating-point representation for gate modifiers.,This fix helps prevent numerical inaccuracies in quantum gate calculations.,Gate
+1523,Transition from direct inclusion to modular gate definition,This change addresses potential maintenance and update vulnerabilities.,Gate
+1544,Incorrect initialization of quantum gate parameters.,Reduces the chance of erroneous quantum gate execution.,Gate
+1552,Fixing incorrect quantum gate parameters,Misconfiguration in quantum circuit execution,Gate
+1557,Addition of missing gate type handling in code logic.,Resolves potential parameter access issues for P_GATE.,Gate
+1560,Missing gate type in node processing,Addresses CP_GATE command handling oversight in quantum circuits,Gate
+1569,"Enhancements in gate control logic, adding new oracle types.",Improper handling of complex quantum operations.,Gate
+1572,Implementation of additional quantum gate in execution logic,Expands functionality without known classical vulnerabilities.,Gate
+1573,Misimplementation of quantum gate functionality,Incorrect gate operation leading to erroneous quantum circuit results,Gate
+1636,Missing support for Ansatz gates in execution,Potential incorrect handling of quantum gate types.,Gate
+1643,Input validation for quantum gate parameters.,Prevents usage of the same qubit for control and target.,Gate
+1645,Correction of ISWAP gate matrix values.,Incorrect phase representation in quantum gate operations.,Gate
+1657,Parameter correction for quantum gate operations,Resolves incorrect quantum gate execution sequence.,Gate
+1668,Initialization of gate types in constructor.,Undefined behavior due to uninitialized data.,Gate
+1678,Enhanced angle matching for gate decomposition.,Reduces errors in quantum gate operations.,Gate
+1680,Parameter handling error in quantum gate implementation,Improper parameterization may lead to runtime errors or incorrect circuit representation,Gate
+1682,Parameter adjustment for quantum gate operations,Ensures proper quantum computation and entanglement.,Gate
+1683,Improper gate order in quantum circuit layers.,Measurement gates may lead to incorrect circuit execution.,Gate
+1709,Improved handling of parallel operations for quantum gates,Ensures accurate state updates prevent misinformation during quantum operations,Gate
+1895,Parameter naming inconsistency in quantum gate functions,Improper input handling could lead to errors,Gate
+1926,Improper handling of quantum gate connections.,Potential errors in quantum state transformations.,Gate
+1938,Renaming and restructuring of quantum gates code.,Improves clarity in quantum gate definitions.,Gate
+1939,Clarification of gate effects and their implications,Misinterpretation of gate influence on state transitions,Gate
+1940,Unneeded promise related to gate net effects,Unintended state manipulation in quantum gates.,Gate
+1964,Improved support for two-qubit gate operations,Fixes potential limitations in circuit complexity and expressibility,Gate
+2121,Insufficient verification of gate operational compatibility.,Ensures compliance with Azure's gate implementation standards.,Gate
+2341,Enhancement for backend compatibility and gate support,Addressed command processing for supported quantum gates.,Gate
+3208,Quantum gate operation clarification and correction.,Incorrect qubit manipulation could lead to erroneous quantum states.,Gate
+3221,Documentation correction for gate naming,Ensures correct gate operation in quantum algorithms,Gate
+3292,Missing quantum gate implementations or functionalities.,Incomplete functionalities might lead to incorrect computations.,Gate
+3325,Addition of new quantum gate functionalities to implementation.,"No known vulnerabilities, simply adding new features.",Gate
+3535,Optimization for Pauli gate error handling,Optimizes execution of noise operations based on gate types.,Gate
+3559,Adding new quantum gates to backend utilities,Potentially incomplete quantum algorithm implementations.,Gate
+3560,Enhancement of simulator capabilities for gate operations.,Adds functionality for simulating multi-qubit interactions.,Gate
+3561,Gate addition to improve simulator functionality.,"This enhances gate representation, addressing potential usability issues.",Gate
+3562,Enhancement for gate support in quantum computing methods.,Improves flexibility for quantum gate operations.,Gate
+3563,"Addition of new quantum gate parameters, corrections to mappings.",Adds support for a controlled-controlled-Z gate in operations.,Gate
+3564,Missing gates implementation in quantum operations,Missing controlled-Z gate for accurate quantum simulations.,Gate
+3565,"Updates gate set consistency, corrects gate mappings",Resolves potential confusion in gate operations usage,Gate
+3566,Addition of missing quantum gate definitions,The absence of the Controlled-CZ gate limits circuit expressiveness.,Gate
+3567,Adding new gate functionality to the library.,No vulnerabilities resolved; enhances feature set.,Gate
+3584,Enhancements for multi-qubit gate handling,Prevents incorrect estimations due to improper gate parameter evaluation.,Gate
+3789,Incorrect quantum gate mapping or application,Prevents incorrect results in the Deutsch-Josza algorithm,Gate
+4171,Feature enhancement with gate implementation,Improves quantum gate execution and flexibility.,Gate
+4177,Type-checking adjustment for gate internal parameters,Prevents misclassification of parameters leading to runtime errors,Gate
+4179,Bug fixes for quantum gate implementation.,Improper gate application in quantum circuits.,Gate
+4182,Commented out failing quantum gates for stability.,Removes non-functioning gate operations affecting circuit accuracy.,Gate
+4189,Compatibility enhancement for OpenQASM gate specifications.,Ensures proper gate parsing in quantum circuit representations.,Gate
+4193,Improved gate handling for QASM parsing.,Prevents runtime errors with undefined gates.,Gate
+4354,Bug fix for gate control logic and wrapping,Clarifies control target handling in quantum operations,Gate
+4362,Parameter clarity in gate definition,"Improves code clarity, reduces potential confusion.",Gate
+4389,Improves control flow in quantum gate compilation,Addresses potential errors in qubit control usage during circuit optimization,Gate
+4419,Replacement of identity gate with valid circuit instruction,Incorrect gate might lead to unexpected quantum states,Gate
+4429,Incorrect quantum gate representation,Improper gates leading to incorrect quantum circuit behavior.,Gate
+4430,Correction of quantum gate implementation and output method.,Resolves misrepresentation in quantum circuit outputs.,Gate
+4431,Terminology standardization in gate representation.,"No significant vulnerabilities addressed, focuses on clarity.",Gate
+4594,Addition of intrinsic CNOT gate functionality,The code introduces a controlled operation without an existing equivalent,Gate
+4595,Implementation of quantum gate decomposition for correctness,Fixes potential inaccuracies in controlled quantum operations,Gate
+4596,Implementation of missing quantum gate functionality.,Addresses missing operation for qubit manipulation.,Gate
+4597,Implementation of an Uncontrolled Y Rotation Gate,"No specific vulnerabilities addressed, just a new feature.",Gate
+4598,Missing phase gate operation for qubits,Resolves incorrect usage of single-qubit phase gates,Gate
+4599,Missing SAdj operation in quantum gate library.,Improves phase application in quantum circuits.,Gate
+4600,Implementation of missing quantum gate operation.,Improves accuracy in qubit state transformation.,Gate
+4601,Addition of missing quantum gate functionality,Addresses unimplemented gate operations in quantum circuits.,Gate
+4602,Implementation of a quantum gate functionality,Ensures proper application of Pauli X gate in quantum circuits,Gate
+4603,Missing implementation of a quantum gate function.,Correct application of quantum gate logic.,Gate
+4605,Replacement of Ising gates with rotation gates,Ensures correct quantum gate execution and decomposition,Gate
+4606,Addition of new quantum gate functionality.,The new operation facilitates modeling of quantum gate interactions between qubits.,Gate
+4608,Implementation of missing quantum gate operations.,None identified; enhances functionality and flexibility.,Gate
+4610,Addition of a missing quantum gate operation,Ensures complete functionality of quantum algorithms using Ryy.,Gate
+4611,Improvement of quantum gate definition and control logic.,"Implements Ryy and CRyy, enhancing quantum gate operations.",Gate
+4612,Addition of quantum operation for gate implementation.,Fixes lack of Rzz gate support in simulations.  Implementing gate functionality could lead to incorrect quantum state evolution.,Gate
+4614,Addition of missing gate operations and controls,Addresses standard gate rotation implementation errors.,Gate
+4622,Adding missing quantum gate decompositions in code.,Incomplete functionality for certain quantum gate operations.,Gate
+4625,"Addition of quantum gate decompositions, enhancing capabilities.",No direct vulnerabilities are identified; enhancements improve existing functionality.,Gate
+4626,Missing quantum gate decompositions in codebase.,Expands availability of decomposition functions for more robustness.,Gate
+4628,Addition of rotation gates to enhance functionality.,"Increases gate set variety, improving algorithm fidelity and options.",Gate
+4629,Code enhancement for gate decomposition and compilation efficiency.,Fixes support for missing quantum gate decompositions.,Gate
+4631,Test implementation for gate operation accuracy,Ensures correctness in gate application operations,Gate
+4953,Incorrect state slice in gate application logic,Resolves incorrect quantum gate application logic during state evolution,Gate
+4979,Code refactoring for clearer gate set management.,"Improves readability, maintainability; no direct vulnerabilities addressed.",Gate
+4980,Adding unit test for quantum gate set creation.,Potential for unnoticed errors in gate set instantiation.,Gate
+4981,Fix for gate decomposition and sequencing issues.,Ensures correctness in circuit behavior and execution.,Gate
+4982,Validation and correctness of quantum gate implementations.,Ensures correct quantum gate transformations and interactions.,Gate
+4985,Optimization of gate operations in quantum circuits,Improves circuit efficiency and reduces error rates.,Gate
+4986,Unit testing for quantum gate accuracy.,Ensures decomposed gates produce expected quantum operations.,Gate
+5031,"Type compatibility improvement, enhances future-proofing of gate operations.",Enables extensibility for future gate implementations in quantum circuits.,Gate
+5035,Improper class inheritance affecting gate functionality,"No immediate vulnerabilities identified, but improves gate integration.",Gate

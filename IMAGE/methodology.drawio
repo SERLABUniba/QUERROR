@@ -1,0 +1,209 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" scale="1" border="0" version="24.7.17">
+  <diagram name="Page-1" id="qz7g4sQ8fV7oV9ekI9_F">
+    <mxGraphModel dx="1687" dy="1879" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fontSize=23;" parent="1" source="KUi3UxJqZwoA2pfkQvp6-4" target="KUi3UxJqZwoA2pfkQvp6-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=23;" parent="1" source="KUi3UxJqZwoA2pfkQvp6-6" target="KUi3UxJqZwoA2pfkQvp6-45" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="840" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;fontSize=23;" parent="1" source="KUi3UxJqZwoA2pfkQvp6-45" target="KUi3UxJqZwoA2pfkQvp6-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-51" value="" style="group;fontSize=23;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="100" y="125" width="340" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-6" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" parent="KUi3UxJqZwoA2pfkQvp6-51" vertex="1">
+          <mxGeometry width="340" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-30" value="&lt;div style=&quot;font-size: 23px;&quot;&gt;Extract All Code Commits;&lt;br style=&quot;font-size: 23px;&quot;&gt;conforming to conditions:&lt;br style=&quot;font-size: 23px;&quot;&gt;&lt;br style=&quot;font-size: 23px;&quot;&gt;&lt;b style=&quot;font-size: 23px;&quot;&gt;Keywords in Read Me/Documentation&lt;/b&gt;&lt;b&gt;:&lt;/b&gt;&lt;br style=&quot;font-size: 23px;&quot;&gt;quantum/dwave/cirq/qml/qiskit&lt;br style=&quot;font-size: 23px;&quot;&gt;&lt;br style=&quot;font-size: 23px;&quot;&gt;&lt;b style=&quot;font-size: 23px;&quot;&gt;Date&lt;/b&gt; &amp;gt; 01/01/2023&amp;nbsp;&lt;br style=&quot;font-size: 23px;&quot;&gt;&lt;br style=&quot;font-size: 23px;&quot;&gt;&lt;b style=&quot;font-size: 23px;&quot;&gt;Stars&lt;/b&gt; &amp;gt; 50&lt;br style=&quot;font-size: 23px;&quot;&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" parent="KUi3UxJqZwoA2pfkQvp6-51" vertex="1">
+          <mxGeometry x="11.333333333333332" y="10" width="317.33333333333337" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-52" value="" style="group;fontSize=23;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="480" y="125" width="280" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-45" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" parent="KUi3UxJqZwoA2pfkQvp6-52" vertex="1">
+          <mxGeometry width="280" height="300.00000000000006" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-46" value="&lt;div style=&quot;font-size: 23px;&quot;&gt;&lt;b&gt;Data Extracted:&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 23px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Owner&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 23px;&quot;&gt;Repository&lt;/div&gt;&lt;div style=&quot;font-size: 23px;&quot;&gt;Commit Message&lt;br&gt;Filename&lt;/div&gt;&lt;div style=&quot;font-size: 23px;&quot;&gt;Code Changes&lt;/div&gt;&lt;div style=&quot;font-size: 23px;&quot;&gt;UUID&lt;br&gt;&lt;div&gt;&lt;b&gt;Repositories&lt;/b&gt;: 84&lt;/div&gt;&lt;div&gt;&lt;b&gt;Code Commits:&amp;nbsp;&lt;/b&gt;5044&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" parent="KUi3UxJqZwoA2pfkQvp6-52" vertex="1">
+          <mxGeometry x="9.333333333333334" y="10.000000000000002" width="261.3333333333333" height="280.00000000000006" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=2;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=23;" parent="1" source="KUi3UxJqZwoA2pfkQvp6-50" target="KUi3UxJqZwoA2pfkQvp6-60" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="659.5" as="sourcePoint" />
+            <mxPoint x="360" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-59" value="" style="group;fontSize=23;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="450" y="480" width="320" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-60" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" parent="KUi3UxJqZwoA2pfkQvp6-59" vertex="1">
+          <mxGeometry width="320" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-61" value="&lt;b style=&quot;font-size: 23px;&quot;&gt;Analysis:&lt;/b&gt;&lt;div style=&quot;font-size: 23px;&quot;&gt;- Analyze &lt;b style=&quot;font-size: 23px;&quot;&gt;233&lt;/b&gt; bug patterns&lt;br style=&quot;font-size: 23px;&quot;&gt;- Detect recurrent bug pattern areas&lt;/div&gt;&lt;div style=&quot;font-size: 23px;&quot;&gt;-&amp;nbsp;Detect vulnerabilities patterns&lt;br style=&quot;font-size: 23px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 23px;&quot;&gt;- Detect QDLC phases&lt;/span&gt;&lt;br style=&quot;font-size: 23px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 23px;&quot;&gt;- Detect relevance to PbD and SbD principles&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" parent="KUi3UxJqZwoA2pfkQvp6-59" vertex="1">
+          <mxGeometry x="10.666666666666666" y="10" width="298.66666666666674" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-62" value="" style="group;fontSize=23;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="480" y="-80" width="300" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" parent="KUi3UxJqZwoA2pfkQvp6-62" vertex="1">
+          <mxGeometry width="300" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-2" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;GitHub Opensource &lt;br style=&quot;font-size: 23px;&quot;&gt;Quantum&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 23px; background-color: initial;&quot;&gt;Projects&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;font-size: 23px;&quot;&gt;&lt;br style=&quot;font-size: 23px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 23px;&quot;&gt;&lt;br style=&quot;font-size: 23px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 23px;&quot;&gt;&lt;br style=&quot;font-size: 23px;&quot;&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" parent="KUi3UxJqZwoA2pfkQvp6-62" vertex="1">
+          <mxGeometry x="10" y="10" width="280" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-1" value="" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.github;fontSize=23;" parent="KUi3UxJqZwoA2pfkQvp6-62" vertex="1">
+          <mxGeometry x="112.5" y="90" width="67.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;fontSize=23;" parent="1" source="KUi3UxJqZwoA2pfkQvp6-60" target="KUi3UxJqZwoA2pfkQvp6-25" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="800" />
+              <mxPoint x="830" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DpFSkrmX6kfh_7H0VBrR-7" value="" style="group;fontSize=23;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="400" y="800" width="580" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="DpFSkrmX6kfh_7H0VBrR-2" value="" style="group;fontSize=23;" parent="DpFSkrmX6kfh_7H0VBrR-7" vertex="1" connectable="0">
+          <mxGeometry x="310" y="60" width="240" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-25" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;fontStyle=1" parent="DpFSkrmX6kfh_7H0VBrR-2" vertex="1">
+          <mxGeometry width="240" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-71" value="&lt;span style=&quot;font-size: 23px; font-weight: 700;&quot;&gt;Mapping of&amp;nbsp;&lt;/span&gt;&lt;b style=&quot;font-size: 23px; text-indent: 0pt; background-color: initial; font-family: Calibri; text-align: justify;&quot;&gt;&lt;span style=&quot;font-family: Arial; font-size: 23px;&quot;&gt;QDLC Phases to Vulnerabilities&lt;/span&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" parent="DpFSkrmX6kfh_7H0VBrR-2" vertex="1">
+          <mxGeometry x="7.5" y="8" width="225" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="DpFSkrmX6kfh_7H0VBrR-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=23;" parent="1" source="KUi3UxJqZwoA2pfkQvp6-60" target="DpFSkrmX6kfh_7H0VBrR-13" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="890" y="860" as="targetPoint" />
+            <mxPoint x="880" y="790" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="610" y="800" />
+              <mxPoint x="680" y="800" />
+              <mxPoint x="680" y="1050" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DpFSkrmX6kfh_7H0VBrR-16" value="" style="group;fontSize=23;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="560" y="1050" width="240" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="DpFSkrmX6kfh_7H0VBrR-13" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;&lt;br style=&quot;font-size: 23px;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=23;" parent="DpFSkrmX6kfh_7H0VBrR-16" vertex="1">
+          <mxGeometry width="240" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="DpFSkrmX6kfh_7H0VBrR-14" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;Mapping of Bug Areas to QDLC&lt;br style=&quot;font-size: 23px;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=23;" parent="DpFSkrmX6kfh_7H0VBrR-16" vertex="1">
+          <mxGeometry x="9.230769230769232" y="10" width="221.53846153846155" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="DpFSkrmX6kfh_7H0VBrR-18" value="" style="group;fontSize=23;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="860" y="1050" width="240" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="DpFSkrmX6kfh_7H0VBrR-19" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;&lt;br style=&quot;font-size: 23px;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=23;" parent="DpFSkrmX6kfh_7H0VBrR-18" vertex="1">
+          <mxGeometry width="240" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="DpFSkrmX6kfh_7H0VBrR-20" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;Mapping of&amp;nbsp;&lt;/span&gt;&lt;b style=&quot;font-size: 23px; text-indent: 0pt; background-color: initial; font-family: Calibri; text-align: justify;&quot;&gt;&lt;span style=&quot;font-family: Arial; font-size: 23px;&quot;&gt;QDLC Phases to PbD/SbD principles&lt;/span&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=23;" parent="DpFSkrmX6kfh_7H0VBrR-18" vertex="1">
+          <mxGeometry x="9.230769230769232" y="10" width="221.53846153846155" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="FpzJ63cenSzQv46SstAu-2" value="" style="group;fontSize=23;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="810" y="125" width="300" height="655" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-53" value="" style="group;fontSize=23;" parent="FpzJ63cenSzQv46SstAu-2" vertex="1" connectable="0">
+          <mxGeometry width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;fontSize=23;" parent="KUi3UxJqZwoA2pfkQvp6-53" source="KUi3UxJqZwoA2pfkQvp6-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="355" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-8" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" parent="KUi3UxJqZwoA2pfkQvp6-53" vertex="1">
+          <mxGeometry width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-32" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;&lt;b style=&quot;font-size: 23px;&quot;&gt;Annotation of the Code Commits:&lt;/b&gt;&lt;br style=&quot;font-size: 23px;&quot;&gt;&lt;br style=&quot;font-size: 23px;&quot;&gt;&lt;/span&gt;&lt;div style=&quot;font-size: 23px;&quot;&gt;&lt;div style=&quot;font-size: 23px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 23px;&quot;&gt;Symptom&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 23px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 23px;&quot;&gt;Description&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;background-color: initial; font-size: 23px;&quot;&gt;&lt;div style=&quot;font-size: 23px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 23px;&quot;&gt;Bug Type&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 23px;&quot;&gt;Bug Pattern&lt;br style=&quot;font-size: 23px;&quot;&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 23px;&quot;&gt;Vulnerability&lt;/span&gt;&lt;div style=&quot;font-size: 23px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 23px;&quot;&gt;Test Case (Probable)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" parent="KUi3UxJqZwoA2pfkQvp6-53" vertex="1">
+          <mxGeometry x="10" y="10" width="280" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-54" value="" style="group;fontSize=23;" parent="FpzJ63cenSzQv46SstAu-2" vertex="1" connectable="0">
+          <mxGeometry y="355" width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-50" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" parent="KUi3UxJqZwoA2pfkQvp6-54" vertex="1">
+          <mxGeometry width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-14" value="&lt;b style=&quot;font-size: 23px;&quot;&gt;Remove:&lt;/b&gt;&lt;br style=&quot;font-size: 23px;&quot;&gt;- Purely Classical Bug Types (4056)&lt;br style=&quot;font-size: 23px;&quot;&gt;- Non-Bug Fix Code Commits (e.g. code version update, enhancement, refactor, formatting etc.) (755)&lt;br style=&quot;font-size: 23px;&quot;&gt;&lt;div style=&quot;font-size: 23px;&quot;&gt;&lt;br style=&quot;font-size: 23px;&quot;&gt;&lt;div style=&quot;font-size: 23px;&quot;&gt;&lt;br style=&quot;font-size: 23px;&quot;&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" parent="KUi3UxJqZwoA2pfkQvp6-54" vertex="1">
+          <mxGeometry x="10" y="10" width="280" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=23;" parent="1" source="KUi3UxJqZwoA2pfkQvp6-60" target="KUi3UxJqZwoA2pfkQvp6-27" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="610" y="800" />
+              <mxPoint x="380" y="800" />
+              <mxPoint x="380" y="1050" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DpFSkrmX6kfh_7H0VBrR-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=23;" parent="1" target="DpFSkrmX6kfh_7H0VBrR-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="870" as="targetPoint" />
+            <mxPoint x="610" y="780" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="610" y="780" />
+              <mxPoint x="610" y="800" />
+              <mxPoint x="560" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;fontSize=23;" parent="1" target="KUi3UxJqZwoA2pfkQvp6-26" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="780" />
+              <mxPoint x="610" y="800" />
+              <mxPoint x="230" y="800" />
+            </Array>
+            <mxPoint x="610" y="780" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DpFSkrmX6kfh_7H0VBrR-3" value="" style="group;fontSize=23;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="410" y="860" width="240" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="DpFSkrmX6kfh_7H0VBrR-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;fontStyle=1" parent="DpFSkrmX6kfh_7H0VBrR-3" vertex="1">
+          <mxGeometry width="240" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="DpFSkrmX6kfh_7H0VBrR-5" value="&lt;span style=&quot;font-size: 23px; font-weight: 700;&quot;&gt;Mapping of Bug Areas to PbD/SbD principles&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" parent="DpFSkrmX6kfh_7H0VBrR-3" vertex="1">
+          <mxGeometry x="7.5" y="9" width="225" height="152" as="geometry" />
+        </mxCell>
+        <mxCell id="DpFSkrmX6kfh_7H0VBrR-9" value="" style="group;fontSize=23;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="110" y="860" width="240" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-26" value="&lt;span style=&quot;background-color: initial; font-size: 23px;&quot;&gt;&lt;br style=&quot;font-size: 23px;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;fontStyle=1" parent="DpFSkrmX6kfh_7H0VBrR-9" vertex="1">
+          <mxGeometry width="240" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-67" value="&lt;span style=&quot;font-size: 23px; font-weight: 700; background-color: initial;&quot;&gt;Mapping of Bug Areas to Vulnerabilities&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" parent="DpFSkrmX6kfh_7H0VBrR-9" vertex="1">
+          <mxGeometry x="7.5" y="8.5" width="225" height="153" as="geometry" />
+        </mxCell>
+        <mxCell id="DpFSkrmX6kfh_7H0VBrR-17" value="" style="group;fontSize=23;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="260" y="1050" width="240" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-27" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;&lt;br style=&quot;font-size: 23px;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=23;" parent="DpFSkrmX6kfh_7H0VBrR-17" vertex="1">
+          <mxGeometry width="240" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="KUi3UxJqZwoA2pfkQvp6-68" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;Mapping of Bug Areas to QDLC&lt;br style=&quot;font-size: 23px;&quot;&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=23;" parent="DpFSkrmX6kfh_7H0VBrR-17" vertex="1">
+          <mxGeometry x="9.230769230769232" y="10" width="221.53846153846155" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="FpzJ63cenSzQv46SstAu-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=2;fontSize=23;" parent="1" source="KUi3UxJqZwoA2pfkQvp6-60" target="DpFSkrmX6kfh_7H0VBrR-19" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="800" />
+              <mxPoint x="980" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

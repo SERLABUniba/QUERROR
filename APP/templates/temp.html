@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analysis</title>
+    <style>
+        #openai-reply div {
+            margin-bottom: 10px;
+            position: relative;
+        }
+        #overlay-button {
+            position: absolute;
+            z-index: 1000;
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form id="popup-form">
+        <label for="code-changes">Enter Code Changes:</label>
+        <textarea id="code-changes" name="code-changes" rows="4" cols="50"></textarea>
+        <input type="submit" value="Analyze">
+    </form>
+    <div id="openai-reply"></div>
+    <button id="overlay-button">Copy Selected Text</button>
+
+    <script>
+        function displayPopup(message) {
+            const stringsToBold = ["Probable Symptom", "Description", "Bug Type", "Bug Pattern", "Vulnerability", "Test Case"];
+            stringsToBold.forEach(str => {
+                const regex = new RegExp(str, 'g');
+                message = message.replace(regex, "<strong>" + str + "</strong>");
+            });
+
+            const openaiReplyDiv = document.getElementById('openai-reply');
+            openaiReplyDiv.innerHTML = '';
+
+            const topics = message.split("<br>");
+            topics.forEach(topic => {
+                const topicDiv = document.createElement('div');
+                topicDiv.innerHTML = topic.trim();
+                openaiReplyDiv.appendChild(topicDiv);
+            });
+        }
+
+        document.getElementById('popup-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const defaultText = "Response from OpenAI is loading. Please wait...";
+            displayPopup(defaultText);
+
+            const fixedText = "What bugs does this code change resolve? ...";
+            const inputText = document.getElementById('code-changes').value;
+            const popupText = fixedText + " " + inputText;
+
+            setTimeout(function() {
+                // Simulate AJAX request
+                const response = {
+                    generated_text: "Probable Symptom: This is a symptom.<br>Description: This is a description.<br>Bug Type: Quantum Bug.<br>Bug Pattern: Pattern A.<br>Vulnerability: High.<br>Test Case: Test case 1."
+                };
+                displayPopup(response.generated_text);
+            }, 500);
+        });
+
+        document.getElementById('openai-reply').addEventListener('mouseup', function(event) {
+            const selectedText = window.getSelection().toString().trim();
+            const overlayButton = document.getElementById('overlay-button');
+
+            if (selectedText && window.getSelection().anchorNode.parentElement.closest('#openai-reply')) {
+                const range = window.getSelection().getRangeAt(0);
+                const rect = range.getBoundingClientRect();
+                overlayButton.style.display = 'block';
+                overlayButton.style.top = `${rect.bottom + window.scrollY}px`;
+                overlayButton.style.left = `${rect.left + window.scrollX}px`;
+            } else {
+                overlayButton.style.display = 'none';
+            }
+        });
+
+        document.getElementById('overlay-button').addEventListener('click', function() {
+            const selectedText = window.getSelection().toString().trim();
+            if (selectedText) {
+                const textField = document.createElement('textarea');
+                textField.innerText = selectedText;
+                document.body.appendChild(textField);
+                textField.select();
+                document.execCommand('copy');
+                textField.remove();
+
+                this.textContent = 'Copied!';
+                setTimeout(() => {
+                    this.textContent = 'Copy Selected Text';
+                }, 2000); // Reset button text after 2 seconds
+            }
+        });
+    </script>
+</body>
+</html>

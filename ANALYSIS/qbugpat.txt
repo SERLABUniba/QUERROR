@@ -1,0 +1,38 @@
+Quantum Bug Patterns
+
+Try to find out the SHA and link of each included quantum bug ?
+
+-
+
+-
+
+
+Quantum Annotated Code Changes:
+-------------------------------
+Hierarchical Clustering + BERT
+Threshold	Patterns
+0.1 		908
+0.2 		790
+0.3 		597
+0.4 		378
+0.5 		214	*
+0.6 		94	*
+0.7 		38  *
+0.8 		6	*
+0.9 		1
+
+
+* - check the groups manually to re-define the patterns
+
+- Start checking for the bug patterns grouped together for each value of threshold.
+
+- 0.7 -- 38 clusters -- 
+-----------------------
+
+
+
+
+
+
+
+

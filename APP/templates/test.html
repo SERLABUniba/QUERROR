@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional HTML</title>
+</head>
+<body>
+    <div id="conditional-content">
+        <!-- Initial content before JavaScript execution -->
+        <p id="message"></p>
+        <button id="button">Click Me</button>
+    </div>
+
+    <!-- Include JavaScript code -->
+    <script>
+        // JavaScript code to implement condition
+        // You can use the values passed from Flask or any other source
+        var condition = str;
+
+        // Get the elements to modify
+        var messageElement = document.getElementById("message");
+        var buttonElement = document.getElementById("button");
+
+        // Check the condition
+        if (str=="VAL") {
+            // If condition is true, update the content
+            messageElement.textContent = "Condition is true. This message will be shown.";
+        } else {
+            // If condition is false, update the content
+            messageElement.textContent = "Condition is false. This message will be shown instead.";
+        }
+
+        // Add an event listener to the button (optional)
+        buttonElement.addEventListener("click", function() {
+            // Perform actions when the button is clicked
+            alert("Button clicked!");
+        });
+    </script>
+</body>
+</html>

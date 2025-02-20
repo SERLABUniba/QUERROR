@@ -1,0 +1,13 @@
+Based on the above code change, what is the probable cause of why this code change was done?
+What bugs does this code change resolve? Does this solve any classical or quantum vulnerabilities?
+Code changes in qiskit, cirq, or dwave should be related to quantum bugs.
+Is the code change related to classical or quantum computing?
+What vulnerabilities (quantum or classical) does this fix solve?
+What test case can be used to detect this bug or vulnerability in the original unchanged code?
+Answer all the questions above, in short and strictly under the following six different topics:
+Probable Symptom, Description,  Bug Type (classical or quantum, one word answer),
+Bug Pattern (categorize the type of bug or code change, 5 to 6 words answer),
+Vulnerability (10 words max), and
+Test Case (30 words max, if only applicable).
+Do not return numbered lists.
+Do not write topic titles. Strictly separate one topic from the other by a pipe "|" symbol.
